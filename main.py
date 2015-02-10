@@ -11,15 +11,6 @@
 import sys, argparse, os, subprocess, json
 from bs4 import BeautifulSoup
 
-# call = [
-# 'sourcekitten',
-# 'doc',
-# '-project',
-# '/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation.xcodeproj',
-# '-scheme',
-# 'TestDocumentation'
-# ]
-
 def usage():
   print "This is a help file!"
 
@@ -32,6 +23,7 @@ def main():
   parser.add_argument('-output', dest='output', default='', help='The output file.')
 
   args = parser.parse_args()
+  subprocess.call('clear')
 
   print "\n---------------------------------------------------\n"
 
@@ -70,7 +62,10 @@ def main():
   obj.write(json_string)
   obj.close
 
-  print "Saved! Have a nice day. :)\n"
+  print "Saved! Have a nice day. :)"
+
+  print "\n---------------------------------------------------\n"
+
   sys.exit()
 
 if __name__ == '__main__':
