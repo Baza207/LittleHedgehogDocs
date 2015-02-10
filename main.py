@@ -9,7 +9,7 @@
 #!/usr/bin/env python
 
 import sys, argparse, os, subprocess, json
-from bs4 import BeautifulSoup
+import build_docs
 
 def usage():
   print "This is a help file!"
@@ -37,18 +37,7 @@ def main():
 
   print "\n---------------------------------------------------\n"
 
-  for item in sourcekitten_JSON:
-    for structure in item['key.substructure']:
-      print "%s" %(structure['key.name'])
-      for substructure in structure['key.substructure']:
-        # print substructure
-        print "  %s" %(substructure['key.name'])
-        try:
-          soup = BeautifulSoup(substructure['key.doc.full_as_xml'])
-          print "    %s" %(soup.para.get_text())
-        except Exception, e:
-          pass
-      print ""
+  build_docs.parseSourceKitten(sourcekitten_JSON)
 
   print "\n---------------------------------------------------\n"
 
