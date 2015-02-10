@@ -41,7 +41,14 @@ def main():
 
   print "\n---------------------------------------------------\n"
 
-  output_filepath = os.path.join(current_filepath, args.output, 'SourceKitten.json')
+  filename = None
+  if args.scheme != None:
+    filename = args.scheme
+  else:
+    filename = 'Docs'
+  filename = '%s.json' %(filename)
+
+  output_filepath = os.path.join(current_filepath, args.output, filename)
   print "Saving to file to: '%s'" %(output_filepath)
 
   print "\n---------------------------------------------------\n"
