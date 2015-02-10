@@ -1,0 +1,1391 @@
+[
+  {
+    "key.diagnostic_stage": "source.diagnostic.stage.swift.parse",
+    "key.length": 1038,
+    "key.offset": 0,
+    "key.substructure": [
+      {
+        "key.annotated_decl": "<Declaration>class DetailViewController : <Type usr=\"c:objc(cs)UIViewController\">UIViewController</Type></Declaration>",
+        "key.bodylength": 798,
+        "key.bodyoffset": 237,
+        "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/DetailViewController.swift",
+        "key.inheritedtypes": [
+          {
+            "key.name": "UIViewController"
+          }
+        ],
+        "key.kind": "source.lang.swift.decl.class",
+        "key.length": 20,
+        "key.name": "DetailViewController",
+        "key.namelength": 20,
+        "key.nameoffset": 197,
+        "key.offset": 197,
+        "key.parsed_declaration": "class DetailViewController: UIViewController",
+        "key.runtime_name": "_TtC8__main__20DetailViewController",
+        "key.substructure": [
+          {
+            "key.annotated_decl": "<Declaration>@IBOutlet weak var detailDescriptionLabel: <Type usr=\"c:objc(cs)UILabel\">UILabel</Type>!</Declaration>",
+            "key.attributes": [
+              {
+                "key.attribute": "source.decl.attribute.weak"
+              },
+              {
+                "key.attribute": "source.decl.attribute.iboutlet"
+              }
+            ],
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/DetailViewController.swift",
+            "key.kind": "source.lang.swift.decl.var.instance",
+            "key.length": 22,
+            "key.name": "detailDescriptionLabel",
+            "key.namelength": 22,
+            "key.nameoffset": 262,
+            "key.offset": 262,
+            "key.parsed_declaration": "@IBOutlet weak var detailDescriptionLabel: UILabel!",
+            "key.substructure": [],
+            "key.typename": "UILabel!",
+            "key.usr": "s:vC17TestDocumentation20DetailViewController22detailDescriptionLabelXwGSQCSo7UILabel_"
+          },
+          {
+            "key.annotated_decl": "<Declaration>var detailItem: <Type usr=\"s:PSs9AnyObject\">AnyObject</Type>? { get set }</Declaration>",
+            "key.bodylength": 97,
+            "key.bodyoffset": 329,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/DetailViewController.swift",
+            "key.kind": "source.lang.swift.decl.var.instance",
+            "key.length": 10,
+            "key.name": "detailItem",
+            "key.namelength": 10,
+            "key.nameoffset": 305,
+            "key.offset": 305,
+            "key.parsed_declaration": "var detailItem: AnyObject?",
+            "key.substructure": [],
+            "key.typename": "AnyObject?",
+            "key.usr": "s:vC17TestDocumentation20DetailViewController10detailItemGSqPSs9AnyObject__"
+          },
+          {
+            "key.annotated_decl": "<Declaration>func configureView()</Declaration>",
+            "key.bodylength": 245,
+            "key.bodyoffset": 455,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/DetailViewController.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 15,
+            "key.name": "configureView()",
+            "key.namelength": 15,
+            "key.nameoffset": 438,
+            "key.offset": 438,
+            "key.parsed_declaration": "func configureView()",
+            "key.substructure": [],
+            "key.typename": "DetailViewController -> () -> ()",
+            "key.usr": "s:FC17TestDocumentation20DetailViewController13configureViewFS0_FT_T_"
+          },
+          {
+            "key.annotated_decl": "<Declaration>override func viewDidLoad()</Declaration>",
+            "key.attributes": [
+              {
+                "key.attribute": "source.decl.attribute.override"
+              }
+            ],
+            "key.bodylength": 143,
+            "key.bodyoffset": 736,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/DetailViewController.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 13,
+            "key.name": "viewDidLoad()",
+            "key.namelength": 13,
+            "key.nameoffset": 721,
+            "key.offset": 721,
+            "key.overrides": [
+              {
+                "key.usr": "c:objc(cs)UIViewController(im)viewDidLoad"
+              }
+            ],
+            "key.parsed_declaration": "override func viewDidLoad()",
+            "key.substructure": [],
+            "key.typename": "DetailViewController -> () -> ()",
+            "key.usr": "s:FC17TestDocumentation20DetailViewController11viewDidLoadFS0_FT_T_"
+          },
+          {
+            "key.annotated_decl": "<Declaration>override func didReceiveMemoryWarning()</Declaration>",
+            "key.attributes": [
+              {
+                "key.attribute": "source.decl.attribute.override"
+              }
+            ],
+            "key.bodylength": 104,
+            "key.bodyoffset": 927,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/DetailViewController.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 25,
+            "key.name": "didReceiveMemoryWarning()",
+            "key.namelength": 25,
+            "key.nameoffset": 900,
+            "key.offset": 900,
+            "key.overrides": [
+              {
+                "key.usr": "c:objc(cs)UIViewController(im)didReceiveMemoryWarning"
+              }
+            ],
+            "key.parsed_declaration": "override func didReceiveMemoryWarning()",
+            "key.substructure": [],
+            "key.typename": "DetailViewController -> () -> ()",
+            "key.usr": "s:FC17TestDocumentation20DetailViewController23didReceiveMemoryWarningFS0_FT_T_"
+          }
+        ],
+        "key.typename": "DetailViewController.Type",
+        "key.usr": "s:C17TestDocumentation20DetailViewController"
+      }
+    ]
+  },
+  {
+    "key.diagnostic_stage": "source.diagnostic.stage.swift.parse",
+    "key.length": 3698,
+    "key.offset": 0,
+    "key.substructure": [
+      {
+        "key.annotated_decl": "<Declaration>class MasterViewController : <Type usr=\"c:objc(cs)UITableViewController\">UITableViewController</Type></Declaration>",
+        "key.bodylength": 3453,
+        "key.bodyoffset": 242,
+        "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/MasterViewController.swift",
+        "key.inheritedtypes": [
+          {
+            "key.name": "UITableViewController"
+          }
+        ],
+        "key.kind": "source.lang.swift.decl.class",
+        "key.length": 20,
+        "key.name": "MasterViewController",
+        "key.namelength": 20,
+        "key.nameoffset": 197,
+        "key.offset": 197,
+        "key.parsed_declaration": "class MasterViewController: UITableViewController",
+        "key.runtime_name": "_TtC8__main__20MasterViewController",
+        "key.substructure": [
+          {
+            "key.annotated_decl": "<Declaration>var detailViewController: <Type usr=\"s:C17TestDocumentation20DetailViewController\">DetailViewController</Type>?</Declaration>",
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/MasterViewController.swift",
+            "key.kind": "source.lang.swift.decl.var.instance",
+            "key.length": 20,
+            "key.name": "detailViewController",
+            "key.namelength": 20,
+            "key.nameoffset": 252,
+            "key.offset": 252,
+            "key.parsed_declaration": "var detailViewController: DetailViewController? = nil",
+            "key.substructure": [],
+            "key.typename": "DetailViewController?",
+            "key.usr": "s:vC17TestDocumentation20MasterViewController20detailViewControllerGSqCS_20DetailViewController_"
+          },
+          {
+            "key.annotated_decl": "<Declaration>var objects: <Type usr=\"c:objc(cs)NSMutableArray\">NSMutableArray</Type></Declaration>",
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/MasterViewController.swift",
+            "key.kind": "source.lang.swift.decl.var.instance",
+            "key.length": 7,
+            "key.name": "objects",
+            "key.namelength": 7,
+            "key.nameoffset": 310,
+            "key.offset": 310,
+            "key.parsed_declaration": "var objects = NSMutableArray()",
+            "key.substructure": [],
+            "key.typename": "NSMutableArray",
+            "key.usr": "s:vC17TestDocumentation20MasterViewController7objectsCSo14NSMutableArray"
+          },
+          {
+            "key.annotated_decl": "<Declaration>override func awakeFromNib()</Declaration>",
+            "key.attributes": [
+              {
+                "key.attribute": "source.decl.attribute.override"
+              }
+            ],
+            "key.bodylength": 242,
+            "key.bodyoffset": 373,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/MasterViewController.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 14,
+            "key.name": "awakeFromNib()",
+            "key.namelength": 14,
+            "key.nameoffset": 357,
+            "key.offset": 357,
+            "key.overrides": [
+              {
+                "key.usr": "c:objc(cs)NSObject(im)awakeFromNib"
+              }
+            ],
+            "key.parsed_declaration": "override func awakeFromNib()",
+            "key.substructure": [],
+            "key.typename": "MasterViewController -> () -> ()",
+            "key.usr": "s:FC17TestDocumentation20MasterViewController12awakeFromNibFS0_FT_T_"
+          },
+          {
+            "key.annotated_decl": "<Declaration>override func viewDidLoad()</Declaration>",
+            "key.attributes": [
+              {
+                "key.attribute": "source.decl.attribute.override"
+              }
+            ],
+            "key.bodylength": 581,
+            "key.bodyoffset": 651,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/MasterViewController.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 13,
+            "key.name": "viewDidLoad()",
+            "key.namelength": 13,
+            "key.nameoffset": 636,
+            "key.offset": 636,
+            "key.overrides": [
+              {
+                "key.usr": "c:objc(cs)UIViewController(im)viewDidLoad"
+              }
+            ],
+            "key.parsed_declaration": "override func viewDidLoad()",
+            "key.substructure": [],
+            "key.typename": "MasterViewController -> () -> ()",
+            "key.usr": "s:FC17TestDocumentation20MasterViewController11viewDidLoadFS0_FT_T_"
+          },
+          {
+            "key.annotated_decl": "<Declaration>override func didReceiveMemoryWarning()</Declaration>",
+            "key.attributes": [
+              {
+                "key.attribute": "source.decl.attribute.override"
+              }
+            ],
+            "key.bodylength": 104,
+            "key.bodyoffset": 1280,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/MasterViewController.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 25,
+            "key.name": "didReceiveMemoryWarning()",
+            "key.namelength": 25,
+            "key.nameoffset": 1253,
+            "key.offset": 1253,
+            "key.overrides": [
+              {
+                "key.usr": "c:objc(cs)UIViewController(im)didReceiveMemoryWarning"
+              }
+            ],
+            "key.parsed_declaration": "override func didReceiveMemoryWarning()",
+            "key.substructure": [],
+            "key.typename": "MasterViewController -> () -> ()",
+            "key.usr": "s:FC17TestDocumentation20MasterViewController23didReceiveMemoryWarningFS0_FT_T_"
+          },
+          {
+            "key.annotated_decl": "<Declaration>func insertNewObject(sender: <Type usr=\"s:PSs9AnyObject\">AnyObject</Type>)</Declaration>",
+            "key.bodylength": 206,
+            "key.bodyoffset": 1432,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/MasterViewController.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 34,
+            "key.name": "insertNewObject(_:)",
+            "key.namelength": 34,
+            "key.nameoffset": 1396,
+            "key.offset": 1396,
+            "key.parsed_declaration": "func insertNewObject(sender: AnyObject)",
+            "key.substructure": [],
+            "key.typename": "MasterViewController -> (AnyObject) -> ()",
+            "key.usr": "s:FC17TestDocumentation20MasterViewController15insertNewObjectFS0_FPSs9AnyObject_T_"
+          },
+          {
+            "key.kind": "source.lang.swift.syntaxtype.comment.mark",
+            "key.length": 14,
+            "key.name": "MARK: - Segues",
+            "key.namelength": 0,
+            "key.nameoffset": 0,
+            "key.offset": 1648,
+            "key.substructure": []
+          },
+          {
+            "key.annotated_decl": "<Declaration>override func prepareForSegue(segue: <Type usr=\"c:objc(cs)UIStoryboardSegue\">UIStoryboardSegue</Type>, sender: <Type usr=\"s:PSs9AnyObject\">AnyObject</Type>?)</Declaration>",
+            "key.attributes": [
+              {
+                "key.attribute": "source.decl.attribute.override"
+              },
+              {
+                "key.attribute": "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.bodylength": 584,
+            "key.bodyoffset": 1745,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/MasterViewController.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 61,
+            "key.name": "prepareForSegue(_:sender:)",
+            "key.namelength": 61,
+            "key.nameoffset": 1682,
+            "key.offset": 1682,
+            "key.overrides": [
+              {
+                "key.usr": "c:objc(cs)UIViewController(im)prepareForSegue:sender:"
+              }
+            ],
+            "key.parsed_declaration": "override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)",
+            "key.substructure": [],
+            "key.typename": "MasterViewController -> (UIStoryboardSegue, sender: AnyObject?) -> ()",
+            "key.usr": "s:FC17TestDocumentation20MasterViewController15prepareForSegueFS0_FTCSo17UIStoryboardSegue6senderGSqPSs9AnyObject___T_"
+          },
+          {
+            "key.kind": "source.lang.swift.syntaxtype.comment.mark",
+            "key.length": 18,
+            "key.name": "MARK: - Table View",
+            "key.namelength": 0,
+            "key.nameoffset": 0,
+            "key.offset": 2339,
+            "key.substructure": []
+          },
+          {
+            "key.annotated_decl": "<Declaration>override func numberOfSectionsInTableView(tableView: <Type usr=\"c:objc(cs)UITableView\">UITableView</Type>) -&gt; <Type usr=\"s:Si\">Int</Type></Declaration>",
+            "key.attributes": [
+              {
+                "key.attribute": "source.decl.attribute.override"
+              },
+              {
+                "key.attribute": "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.bodylength": 22,
+            "key.bodyoffset": 2437,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/MasterViewController.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 51,
+            "key.name": "numberOfSectionsInTableView(_:)",
+            "key.namelength": 51,
+            "key.nameoffset": 2377,
+            "key.offset": 2377,
+            "key.overrides": [
+              {
+                "key.usr": "c:objc(pl)UITableViewDataSource(im)numberOfSectionsInTableView:"
+              }
+            ],
+            "key.parsed_declaration": "override func numberOfSectionsInTableView(tableView: UITableView) -> Int",
+            "key.substructure": [],
+            "key.typename": "MasterViewController -> (UITableView) -> Int",
+            "key.usr": "s:FC17TestDocumentation20MasterViewController27numberOfSectionsInTableViewFS0_FCSo11UITableViewSi"
+          },
+          {
+            "key.annotated_decl": "<Declaration>override func tableView(tableView: <Type usr=\"c:objc(cs)UITableView\">UITableView</Type>, numberOfRowsInSection section: <Type usr=\"s:Si\">Int</Type>) -&gt; <Type usr=\"s:Si\">Int</Type></Declaration>",
+            "key.attributes": [
+              {
+                "key.attribute": "source.decl.attribute.override"
+              }
+            ],
+            "key.bodylength": 34,
+            "key.bodyoffset": 2558,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/MasterViewController.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 69,
+            "key.name": "tableView(_:numberOfRowsInSection:)",
+            "key.namelength": 69,
+            "key.nameoffset": 2480,
+            "key.offset": 2480,
+            "key.overrides": [
+              {
+                "key.usr": "c:objc(pl)UITableViewDataSource(im)tableView:numberOfRowsInSection:"
+              }
+            ],
+            "key.parsed_declaration": "override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int",
+            "key.related_decls": [
+              {
+                "key.annotated_decl": "<RelatedName usr=\"s:FC17TestDocumentation20MasterViewController9tableViewFS0_FTCSo11UITableView21cellForRowAtIndexPathCSo11NSIndexPath_CSo15UITableViewCell\">tableView(_:cellForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"s:FC17TestDocumentation20MasterViewController9tableViewFS0_FTCSo11UITableView21canEditRowAtIndexPathCSo11NSIndexPath_Sb\">tableView(_:canEditRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"s:FC17TestDocumentation20MasterViewController9tableViewFS0_FTCSo11UITableView18commitEditingStyleOSC27UITableViewCellEditingStyle17forRowAtIndexPathCSo11NSIndexPath_T_\">tableView(_:commitEditingStyle:forRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(cs)UITableViewController(py)tableView\">tableView</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willDisplayCell:forRowAtIndexPath:\">tableView(_:willDisplayCell:forRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willDisplayHeaderView:forSection:\">tableView(_:willDisplayHeaderView:forSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willDisplayFooterView:forSection:\">tableView(_:willDisplayFooterView:forSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didEndDisplayingCell:forRowAtIndexPath:\">tableView(_:didEndDisplayingCell:forRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didEndDisplayingHeaderView:forSection:\">tableView(_:didEndDisplayingHeaderView:forSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didEndDisplayingFooterView:forSection:\">tableView(_:didEndDisplayingFooterView:forSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:heightForRowAtIndexPath:\">tableView(_:heightForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:heightForHeaderInSection:\">tableView(_:heightForHeaderInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:heightForFooterInSection:\">tableView(_:heightForFooterInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:estimatedHeightForRowAtIndexPath:\">tableView(_:estimatedHeightForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:estimatedHeightForHeaderInSection:\">tableView(_:estimatedHeightForHeaderInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:estimatedHeightForFooterInSection:\">tableView(_:estimatedHeightForFooterInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:viewForHeaderInSection:\">tableView(_:viewForHeaderInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:viewForFooterInSection:\">tableView(_:viewForFooterInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:accessoryButtonTappedForRowWithIndexPath:\">tableView(_:accessoryButtonTappedForRowWithIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:shouldHighlightRowAtIndexPath:\">tableView(_:shouldHighlightRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didHighlightRowAtIndexPath:\">tableView(_:didHighlightRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didUnhighlightRowAtIndexPath:\">tableView(_:didUnhighlightRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willSelectRowAtIndexPath:\">tableView(_:willSelectRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willDeselectRowAtIndexPath:\">tableView(_:willDeselectRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didSelectRowAtIndexPath:\">tableView(_:didSelectRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didDeselectRowAtIndexPath:\">tableView(_:didDeselectRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:editingStyleForRowAtIndexPath:\">tableView(_:editingStyleForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:titleForDeleteConfirmationButtonForRowAtIndexPath:\">tableView(_:titleForDeleteConfirmationButtonForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:editActionsForRowAtIndexPath:\">tableView(_:editActionsForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:shouldIndentWhileEditingRowAtIndexPath:\">tableView(_:shouldIndentWhileEditingRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willBeginEditingRowAtIndexPath:\">tableView(_:willBeginEditingRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didEndEditingRowAtIndexPath:\">tableView(_:didEndEditingRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:\">tableView(_:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:indentationLevelForRowAtIndexPath:\">tableView(_:indentationLevelForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:shouldShowMenuForRowAtIndexPath:\">tableView(_:shouldShowMenuForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:canPerformAction:forRowAtIndexPath:withSender:\">tableView(_:canPerformAction:forRowAtIndexPath:withSender:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:performAction:forRowAtIndexPath:withSender:\">tableView(_:performAction:forRowAtIndexPath:withSender:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:titleForHeaderInSection:\">tableView(_:titleForHeaderInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:titleForFooterInSection:\">tableView(_:titleForFooterInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:canMoveRowAtIndexPath:\">tableView(_:canMoveRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:sectionForSectionIndexTitle:atIndex:\">tableView(_:sectionForSectionIndexTitle:atIndex:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:moveRowAtIndexPath:toIndexPath:\">tableView(_:moveRowAtIndexPath:toIndexPath:)</RelatedName>"
+              }
+            ],
+            "key.substructure": [],
+            "key.typename": "MasterViewController -> (UITableView, numberOfRowsInSection: Int) -> Int",
+            "key.usr": "s:FC17TestDocumentation20MasterViewController9tableViewFS0_FTCSo11UITableView21numberOfRowsInSectionSi_Si"
+          },
+          {
+            "key.annotated_decl": "<Declaration>override func tableView(tableView: <Type usr=\"c:objc(cs)UITableView\">UITableView</Type>, cellForRowAtIndexPath indexPath: <Type usr=\"c:objc(cs)NSIndexPath\">NSIndexPath</Type>) -&gt; <Type usr=\"c:objc(cs)UITableViewCell\">UITableViewCell</Type></Declaration>",
+            "key.attributes": [
+              {
+                "key.attribute": "source.decl.attribute.override"
+              }
+            ],
+            "key.bodylength": 245,
+            "key.bodyoffset": 2713,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/MasterViewController.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 79,
+            "key.name": "tableView(_:cellForRowAtIndexPath:)",
+            "key.namelength": 79,
+            "key.nameoffset": 2613,
+            "key.offset": 2613,
+            "key.overrides": [
+              {
+                "key.usr": "c:objc(pl)UITableViewDataSource(im)tableView:cellForRowAtIndexPath:"
+              }
+            ],
+            "key.parsed_declaration": "override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell",
+            "key.related_decls": [
+              {
+                "key.annotated_decl": "<RelatedName usr=\"s:FC17TestDocumentation20MasterViewController9tableViewFS0_FTCSo11UITableView21numberOfRowsInSectionSi_Si\">tableView(_:numberOfRowsInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"s:FC17TestDocumentation20MasterViewController9tableViewFS0_FTCSo11UITableView21canEditRowAtIndexPathCSo11NSIndexPath_Sb\">tableView(_:canEditRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"s:FC17TestDocumentation20MasterViewController9tableViewFS0_FTCSo11UITableView18commitEditingStyleOSC27UITableViewCellEditingStyle17forRowAtIndexPathCSo11NSIndexPath_T_\">tableView(_:commitEditingStyle:forRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(cs)UITableViewController(py)tableView\">tableView</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willDisplayCell:forRowAtIndexPath:\">tableView(_:willDisplayCell:forRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willDisplayHeaderView:forSection:\">tableView(_:willDisplayHeaderView:forSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willDisplayFooterView:forSection:\">tableView(_:willDisplayFooterView:forSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didEndDisplayingCell:forRowAtIndexPath:\">tableView(_:didEndDisplayingCell:forRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didEndDisplayingHeaderView:forSection:\">tableView(_:didEndDisplayingHeaderView:forSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didEndDisplayingFooterView:forSection:\">tableView(_:didEndDisplayingFooterView:forSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:heightForRowAtIndexPath:\">tableView(_:heightForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:heightForHeaderInSection:\">tableView(_:heightForHeaderInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:heightForFooterInSection:\">tableView(_:heightForFooterInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:estimatedHeightForRowAtIndexPath:\">tableView(_:estimatedHeightForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:estimatedHeightForHeaderInSection:\">tableView(_:estimatedHeightForHeaderInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:estimatedHeightForFooterInSection:\">tableView(_:estimatedHeightForFooterInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:viewForHeaderInSection:\">tableView(_:viewForHeaderInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:viewForFooterInSection:\">tableView(_:viewForFooterInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:accessoryButtonTappedForRowWithIndexPath:\">tableView(_:accessoryButtonTappedForRowWithIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:shouldHighlightRowAtIndexPath:\">tableView(_:shouldHighlightRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didHighlightRowAtIndexPath:\">tableView(_:didHighlightRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didUnhighlightRowAtIndexPath:\">tableView(_:didUnhighlightRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willSelectRowAtIndexPath:\">tableView(_:willSelectRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willDeselectRowAtIndexPath:\">tableView(_:willDeselectRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didSelectRowAtIndexPath:\">tableView(_:didSelectRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didDeselectRowAtIndexPath:\">tableView(_:didDeselectRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:editingStyleForRowAtIndexPath:\">tableView(_:editingStyleForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:titleForDeleteConfirmationButtonForRowAtIndexPath:\">tableView(_:titleForDeleteConfirmationButtonForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:editActionsForRowAtIndexPath:\">tableView(_:editActionsForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:shouldIndentWhileEditingRowAtIndexPath:\">tableView(_:shouldIndentWhileEditingRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willBeginEditingRowAtIndexPath:\">tableView(_:willBeginEditingRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didEndEditingRowAtIndexPath:\">tableView(_:didEndEditingRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:\">tableView(_:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:indentationLevelForRowAtIndexPath:\">tableView(_:indentationLevelForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:shouldShowMenuForRowAtIndexPath:\">tableView(_:shouldShowMenuForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:canPerformAction:forRowAtIndexPath:withSender:\">tableView(_:canPerformAction:forRowAtIndexPath:withSender:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:performAction:forRowAtIndexPath:withSender:\">tableView(_:performAction:forRowAtIndexPath:withSender:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:titleForHeaderInSection:\">tableView(_:titleForHeaderInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:titleForFooterInSection:\">tableView(_:titleForFooterInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:canMoveRowAtIndexPath:\">tableView(_:canMoveRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:sectionForSectionIndexTitle:atIndex:\">tableView(_:sectionForSectionIndexTitle:atIndex:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:moveRowAtIndexPath:toIndexPath:\">tableView(_:moveRowAtIndexPath:toIndexPath:)</RelatedName>"
+              }
+            ],
+            "key.substructure": [],
+            "key.typename": "MasterViewController -> (UITableView, cellForRowAtIndexPath: NSIndexPath) -> UITableViewCell",
+            "key.usr": "s:FC17TestDocumentation20MasterViewController9tableViewFS0_FTCSo11UITableView21cellForRowAtIndexPathCSo11NSIndexPath_CSo15UITableViewCell"
+          },
+          {
+            "key.annotated_decl": "<Declaration>override func tableView(tableView: <Type usr=\"c:objc(cs)UITableView\">UITableView</Type>, canEditRowAtIndexPath indexPath: <Type usr=\"c:objc(cs)NSIndexPath\">NSIndexPath</Type>) -&gt; <Type usr=\"s:Sb\">Bool</Type></Declaration>",
+            "key.attributes": [
+              {
+                "key.attribute": "source.decl.attribute.override"
+              }
+            ],
+            "key.bodylength": 103,
+            "key.bodyoffset": 3068,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/MasterViewController.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 79,
+            "key.name": "tableView(_:canEditRowAtIndexPath:)",
+            "key.namelength": 79,
+            "key.nameoffset": 2979,
+            "key.offset": 2979,
+            "key.overrides": [
+              {
+                "key.usr": "c:objc(pl)UITableViewDataSource(im)tableView:canEditRowAtIndexPath:"
+              }
+            ],
+            "key.parsed_declaration": "override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool",
+            "key.related_decls": [
+              {
+                "key.annotated_decl": "<RelatedName usr=\"s:FC17TestDocumentation20MasterViewController9tableViewFS0_FTCSo11UITableView21numberOfRowsInSectionSi_Si\">tableView(_:numberOfRowsInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"s:FC17TestDocumentation20MasterViewController9tableViewFS0_FTCSo11UITableView21cellForRowAtIndexPathCSo11NSIndexPath_CSo15UITableViewCell\">tableView(_:cellForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"s:FC17TestDocumentation20MasterViewController9tableViewFS0_FTCSo11UITableView18commitEditingStyleOSC27UITableViewCellEditingStyle17forRowAtIndexPathCSo11NSIndexPath_T_\">tableView(_:commitEditingStyle:forRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(cs)UITableViewController(py)tableView\">tableView</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willDisplayCell:forRowAtIndexPath:\">tableView(_:willDisplayCell:forRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willDisplayHeaderView:forSection:\">tableView(_:willDisplayHeaderView:forSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willDisplayFooterView:forSection:\">tableView(_:willDisplayFooterView:forSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didEndDisplayingCell:forRowAtIndexPath:\">tableView(_:didEndDisplayingCell:forRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didEndDisplayingHeaderView:forSection:\">tableView(_:didEndDisplayingHeaderView:forSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didEndDisplayingFooterView:forSection:\">tableView(_:didEndDisplayingFooterView:forSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:heightForRowAtIndexPath:\">tableView(_:heightForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:heightForHeaderInSection:\">tableView(_:heightForHeaderInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:heightForFooterInSection:\">tableView(_:heightForFooterInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:estimatedHeightForRowAtIndexPath:\">tableView(_:estimatedHeightForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:estimatedHeightForHeaderInSection:\">tableView(_:estimatedHeightForHeaderInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:estimatedHeightForFooterInSection:\">tableView(_:estimatedHeightForFooterInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:viewForHeaderInSection:\">tableView(_:viewForHeaderInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:viewForFooterInSection:\">tableView(_:viewForFooterInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:accessoryButtonTappedForRowWithIndexPath:\">tableView(_:accessoryButtonTappedForRowWithIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:shouldHighlightRowAtIndexPath:\">tableView(_:shouldHighlightRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didHighlightRowAtIndexPath:\">tableView(_:didHighlightRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didUnhighlightRowAtIndexPath:\">tableView(_:didUnhighlightRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willSelectRowAtIndexPath:\">tableView(_:willSelectRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willDeselectRowAtIndexPath:\">tableView(_:willDeselectRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didSelectRowAtIndexPath:\">tableView(_:didSelectRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didDeselectRowAtIndexPath:\">tableView(_:didDeselectRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:editingStyleForRowAtIndexPath:\">tableView(_:editingStyleForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:titleForDeleteConfirmationButtonForRowAtIndexPath:\">tableView(_:titleForDeleteConfirmationButtonForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:editActionsForRowAtIndexPath:\">tableView(_:editActionsForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:shouldIndentWhileEditingRowAtIndexPath:\">tableView(_:shouldIndentWhileEditingRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willBeginEditingRowAtIndexPath:\">tableView(_:willBeginEditingRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didEndEditingRowAtIndexPath:\">tableView(_:didEndEditingRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:\">tableView(_:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:indentationLevelForRowAtIndexPath:\">tableView(_:indentationLevelForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:shouldShowMenuForRowAtIndexPath:\">tableView(_:shouldShowMenuForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:canPerformAction:forRowAtIndexPath:withSender:\">tableView(_:canPerformAction:forRowAtIndexPath:withSender:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:performAction:forRowAtIndexPath:withSender:\">tableView(_:performAction:forRowAtIndexPath:withSender:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:titleForHeaderInSection:\">tableView(_:titleForHeaderInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:titleForFooterInSection:\">tableView(_:titleForFooterInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:canMoveRowAtIndexPath:\">tableView(_:canMoveRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:sectionForSectionIndexTitle:atIndex:\">tableView(_:sectionForSectionIndexTitle:atIndex:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:moveRowAtIndexPath:toIndexPath:\">tableView(_:moveRowAtIndexPath:toIndexPath:)</RelatedName>"
+              }
+            ],
+            "key.substructure": [],
+            "key.typename": "MasterViewController -> (UITableView, canEditRowAtIndexPath: NSIndexPath) -> Bool",
+            "key.usr": "s:FC17TestDocumentation20MasterViewController9tableViewFS0_FTCSo11UITableView21canEditRowAtIndexPathCSo11NSIndexPath_Sb"
+          },
+          {
+            "key.annotated_decl": "<Declaration>override func tableView(tableView: <Type usr=\"c:objc(cs)UITableView\">UITableView</Type>, commitEditingStyle editingStyle: <Type usr=\"c:@E@UITableViewCellEditingStyle\">UITableViewCellEditingStyle</Type>, forRowAtIndexPath indexPath: <Type usr=\"c:objc(cs)NSIndexPath\">NSIndexPath</Type>)</Declaration>",
+            "key.attributes": [
+              {
+                "key.attribute": "source.decl.attribute.override"
+              }
+            ],
+            "key.bodylength": 360,
+            "key.bodyoffset": 3331,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/MasterViewController.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 137,
+            "key.name": "tableView(_:commitEditingStyle:forRowAtIndexPath:)",
+            "key.namelength": 137,
+            "key.nameoffset": 3192,
+            "key.offset": 3192,
+            "key.overrides": [
+              {
+                "key.usr": "c:objc(pl)UITableViewDataSource(im)tableView:commitEditingStyle:forRowAtIndexPath:"
+              }
+            ],
+            "key.parsed_declaration": "override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)",
+            "key.related_decls": [
+              {
+                "key.annotated_decl": "<RelatedName usr=\"s:FC17TestDocumentation20MasterViewController9tableViewFS0_FTCSo11UITableView21numberOfRowsInSectionSi_Si\">tableView(_:numberOfRowsInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"s:FC17TestDocumentation20MasterViewController9tableViewFS0_FTCSo11UITableView21cellForRowAtIndexPathCSo11NSIndexPath_CSo15UITableViewCell\">tableView(_:cellForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"s:FC17TestDocumentation20MasterViewController9tableViewFS0_FTCSo11UITableView21canEditRowAtIndexPathCSo11NSIndexPath_Sb\">tableView(_:canEditRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(cs)UITableViewController(py)tableView\">tableView</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willDisplayCell:forRowAtIndexPath:\">tableView(_:willDisplayCell:forRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willDisplayHeaderView:forSection:\">tableView(_:willDisplayHeaderView:forSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willDisplayFooterView:forSection:\">tableView(_:willDisplayFooterView:forSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didEndDisplayingCell:forRowAtIndexPath:\">tableView(_:didEndDisplayingCell:forRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didEndDisplayingHeaderView:forSection:\">tableView(_:didEndDisplayingHeaderView:forSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didEndDisplayingFooterView:forSection:\">tableView(_:didEndDisplayingFooterView:forSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:heightForRowAtIndexPath:\">tableView(_:heightForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:heightForHeaderInSection:\">tableView(_:heightForHeaderInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:heightForFooterInSection:\">tableView(_:heightForFooterInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:estimatedHeightForRowAtIndexPath:\">tableView(_:estimatedHeightForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:estimatedHeightForHeaderInSection:\">tableView(_:estimatedHeightForHeaderInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:estimatedHeightForFooterInSection:\">tableView(_:estimatedHeightForFooterInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:viewForHeaderInSection:\">tableView(_:viewForHeaderInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:viewForFooterInSection:\">tableView(_:viewForFooterInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:accessoryButtonTappedForRowWithIndexPath:\">tableView(_:accessoryButtonTappedForRowWithIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:shouldHighlightRowAtIndexPath:\">tableView(_:shouldHighlightRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didHighlightRowAtIndexPath:\">tableView(_:didHighlightRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didUnhighlightRowAtIndexPath:\">tableView(_:didUnhighlightRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willSelectRowAtIndexPath:\">tableView(_:willSelectRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willDeselectRowAtIndexPath:\">tableView(_:willDeselectRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didSelectRowAtIndexPath:\">tableView(_:didSelectRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didDeselectRowAtIndexPath:\">tableView(_:didDeselectRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:editingStyleForRowAtIndexPath:\">tableView(_:editingStyleForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:titleForDeleteConfirmationButtonForRowAtIndexPath:\">tableView(_:titleForDeleteConfirmationButtonForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:editActionsForRowAtIndexPath:\">tableView(_:editActionsForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:shouldIndentWhileEditingRowAtIndexPath:\">tableView(_:shouldIndentWhileEditingRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:willBeginEditingRowAtIndexPath:\">tableView(_:willBeginEditingRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:didEndEditingRowAtIndexPath:\">tableView(_:didEndEditingRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:\">tableView(_:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:indentationLevelForRowAtIndexPath:\">tableView(_:indentationLevelForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:shouldShowMenuForRowAtIndexPath:\">tableView(_:shouldShowMenuForRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:canPerformAction:forRowAtIndexPath:withSender:\">tableView(_:canPerformAction:forRowAtIndexPath:withSender:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDelegate(im)tableView:performAction:forRowAtIndexPath:withSender:\">tableView(_:performAction:forRowAtIndexPath:withSender:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:titleForHeaderInSection:\">tableView(_:titleForHeaderInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:titleForFooterInSection:\">tableView(_:titleForFooterInSection:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:canMoveRowAtIndexPath:\">tableView(_:canMoveRowAtIndexPath:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:sectionForSectionIndexTitle:atIndex:\">tableView(_:sectionForSectionIndexTitle:atIndex:)</RelatedName>"
+              },
+              {
+                "key.annotated_decl": "<RelatedName usr=\"c:objc(pl)UITableViewDataSource(im)tableView:moveRowAtIndexPath:toIndexPath:\">tableView(_:moveRowAtIndexPath:toIndexPath:)</RelatedName>"
+              }
+            ],
+            "key.substructure": [],
+            "key.typename": "MasterViewController -> (UITableView, commitEditingStyle: UITableViewCellEditingStyle, forRowAtIndexPath: NSIndexPath) -> ()",
+            "key.usr": "s:FC17TestDocumentation20MasterViewController9tableViewFS0_FTCSo11UITableView18commitEditingStyleOSC27UITableViewCellEditingStyle17forRowAtIndexPathCSo11NSIndexPath_T_"
+          }
+        ],
+        "key.typename": "MasterViewController.Type",
+        "key.usr": "s:C17TestDocumentation20MasterViewController"
+      }
+    ]
+  },
+  {
+    "key.diagnostic_stage": "source.diagnostic.stage.swift.parse",
+    "key.length": 1119,
+    "key.offset": 0,
+    "key.substructure": [
+      {
+        "key.annotated_decl": "<Declaration>class Musician</Declaration>",
+        "key.attributes": [
+          {
+            "key.attribute": "source.decl.attribute.__raw_doc_comment"
+          }
+        ],
+        "key.bodylength": 613,
+        "key.bodyoffset": 150,
+        "key.doc.full_as_xml": "<Class file=\"/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/Musician.swift\" line=\"10\" column=\"7\"><Name>Musician</Name><USR>s:C17TestDocumentation8Musician</USR><Declaration>class Musician</Declaration><Abstract><Para>Musician models jazz musicians. From Ellington to Marsalis, this class has you covered.</Para></Abstract></Class>",
+        "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/Musician.swift",
+        "key.kind": "source.lang.swift.decl.class",
+        "key.length": 8,
+        "key.name": "Musician",
+        "key.namelength": 8,
+        "key.nameoffset": 140,
+        "key.offset": 140,
+        "key.parsed_declaration": "class Musician",
+        "key.runtime_name": "_TtC8__main__8Musician",
+        "key.substructure": [
+          {
+            "key.annotated_decl": "<Declaration>var name: <Type usr=\"s:SS\">String</Type></Declaration>",
+            "key.attributes": [
+              {
+                "key.attribute": "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.doc.full_as_xml": "<Other file=\"/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/Musician.swift\" line=\"14\" column=\"9\"><Name>name</Name><USR>s:vC17TestDocumentation8Musician4nameSS</USR><Declaration>var name: String</Declaration><Abstract><Para>The name of the musician. i.e. &quot;John Coltrane&quot;</Para></Abstract></Other>",
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/Musician.swift",
+            "key.kind": "source.lang.swift.decl.var.instance",
+            "key.length": 4,
+            "key.name": "name",
+            "key.namelength": 4,
+            "key.nameoffset": 225,
+            "key.offset": 225,
+            "key.parsed_declaration": "var name: String",
+            "key.substructure": [],
+            "key.typename": "String",
+            "key.usr": "s:vC17TestDocumentation8Musician4nameSS"
+          },
+          {
+            "key.annotated_decl": "<Declaration>var birthyear: <Type usr=\"s:Su\">UInt</Type></Declaration>",
+            "key.attributes": [
+              {
+                "key.attribute": "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.doc.full_as_xml": "<Other file=\"/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/Musician.swift\" line=\"19\" column=\"9\"><Name>birthyear</Name><USR>s:vC17TestDocumentation8Musician9birthyearSu</USR><Declaration>var birthyear: UInt</Declaration><Abstract><Para>The year the musician was born. i.e. 1926</Para></Abstract></Other>",
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/Musician.swift",
+            "key.kind": "source.lang.swift.decl.var.instance",
+            "key.length": 9,
+            "key.name": "birthyear",
+            "key.namelength": 9,
+            "key.nameoffset": 312,
+            "key.offset": 312,
+            "key.parsed_declaration": "var birthyear: UInt",
+            "key.substructure": [],
+            "key.typename": "UInt",
+            "key.usr": "s:vC17TestDocumentation8Musician9birthyearSu"
+          },
+          {
+            "key.annotated_decl": "<Declaration>init(name: <Type usr=\"s:SS\">String</Type>, birthyear: <Type usr=\"s:Su\">UInt</Type>)</Declaration>",
+            "key.attributes": [
+              {
+                "key.attribute": "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.bodylength": 65,
+            "key.bodyoffset": 696,
+            "key.doc.full_as_xml": "<Function file=\"/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/Musician.swift\" line=\"33\" column=\"5\"><Name>init(name:birthyear:)</Name><USR>s:FC17TestDocumentation8MusiciancFMS0_FT4nameSS9birthyearSu_S0_</USR><Declaration>init(name: String, birthyear: UInt)</Declaration><Abstract><Para>Initialize a Musician. Don&apos;t forget to have a name and a birthyear.</Para></Abstract><Discussion><Para><rawHTML><![CDATA[<dl>]]></rawHTML><rawHTML><![CDATA[<dt>]]></rawHTML>warning<rawHTML><![CDATA[</dt>]]></rawHTML><rawHTML><![CDATA[<dd>]]></rawHTML>Jazz can be addicting.<rawHTML><![CDATA[</dd>]]></rawHTML><rawHTML><![CDATA[</dl>]]></rawHTML></Para><Para>Please be careful out there.</Para><Para>@param name      The name of the musician. @param birthyear The year the musician was born.</Para><Para>@return An initialized Musician instance.</Para></Discussion></Function>",
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/Musician.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 35,
+            "key.name": "init(name:birthyear:)",
+            "key.namelength": 35,
+            "key.nameoffset": 659,
+            "key.offset": 659,
+            "key.parsed_declaration": "init(name: String, birthyear: UInt)",
+            "key.substructure": [
+              {
+                "key.annotated_decl": "<Declaration>let name: <Type usr=\"s:SS\">String</Type></Declaration>",
+                "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/Musician.swift",
+                "key.kind": "source.lang.swift.decl.var.local",
+                "key.length": 4,
+                "key.name": "name",
+                "key.offset": 664,
+                "key.parsed_declaration": "init(name: String, birthyear: UInt)",
+                "key.related_decls": [
+                  {
+                    "key.annotated_decl": "<RelatedName usr=\"s:vC17TestDocumentation8Musician4nameSS\">name</RelatedName>"
+                  }
+                ],
+                "key.typename": "String",
+                "key.usr": "s:vFC17TestDocumentation8MusiciancFMS0_FT4nameSS9birthyearSu_S0_L_4nameSS"
+              }
+            ],
+            "key.typename": "Musician.Type -> (name: String, birthyear: UInt) -> Musician",
+            "key.usr": "s:FC17TestDocumentation8MusiciancFMS0_FT4nameSS9birthyearSu_S0_"
+          }
+        ],
+        "key.typename": "Musician.Type",
+        "key.usr": "s:C17TestDocumentation8Musician"
+      },
+      {
+        "key.annotated_decl": "<Declaration>class Artist</Declaration>",
+        "key.attributes": [
+          {
+            "key.attribute": "source.decl.attribute.__raw_doc_comment"
+          }
+        ],
+        "key.bodylength": 284,
+        "key.bodyoffset": 833,
+        "key.doc.full_as_xml": "<Class file=\"/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/Musician.swift\" line=\"42\" column=\"7\"><Name>Artist</Name><USR>s:C17TestDocumentation6Artist</USR><Declaration>class Artist</Declaration><Abstract><Para>This is anouther class in the same file.</Para></Abstract></Class>",
+        "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/Musician.swift",
+        "key.kind": "source.lang.swift.decl.class",
+        "key.length": 6,
+        "key.name": "Artist",
+        "key.namelength": 6,
+        "key.nameoffset": 825,
+        "key.offset": 825,
+        "key.parsed_declaration": "class Artist",
+        "key.runtime_name": "_TtC8__main__6Artist",
+        "key.substructure": [
+          {
+            "key.annotated_decl": "<Declaration>var totally: <Type usr=\"s:SS\">String</Type></Declaration>",
+            "key.attributes": [
+              {
+                "key.attribute": "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.doc.full_as_xml": "<Other file=\"/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/Musician.swift\" line=\"44\" column=\"9\"><Name>totally</Name><USR>s:vC17TestDocumentation6Artist7totallySS</USR><Declaration>var totally: String</Declaration><Abstract><Para>Totally, just totally</Para></Abstract></Other>",
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/Musician.swift",
+            "key.kind": "source.lang.swift.decl.var.instance",
+            "key.length": 7,
+            "key.name": "totally",
+            "key.namelength": 7,
+            "key.nameoffset": 872,
+            "key.offset": 872,
+            "key.parsed_declaration": "var totally: String",
+            "key.substructure": [],
+            "key.typename": "String",
+            "key.usr": "s:vC17TestDocumentation6Artist7totallySS"
+          },
+          {
+            "key.annotated_decl": "<Declaration>init(toats: <Type usr=\"s:SS\">String</Type>)</Declaration>",
+            "key.attributes": [
+              {
+                "key.attribute": "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.bodylength": 34,
+            "key.bodyoffset": 1081,
+            "key.doc.full_as_xml": "<Function file=\"/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/Musician.swift\" line=\"53\" column=\"5\"><Name>init(toats:)</Name><USR>s:FC17TestDocumentation6ArtistcFMS0_FT5toatsSS_S0_</USR><Declaration>init(toats: String)</Declaration><Abstract><Para>Toats a sting to init.</Para></Abstract><Parameters><Parameter><Name>toats</Name><Direction isExplicit=\"0\">in</Direction><Discussion><Para>The toats string that is so totally awesome.</Para></Discussion></Parameter></Parameters><ResultDiscussion><Para>An initialized Musician instance.</Para></ResultDiscussion></Function>",
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/Musician.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 19,
+            "key.name": "init(toats:)",
+            "key.namelength": 19,
+            "key.nameoffset": 1060,
+            "key.offset": 1060,
+            "key.parsed_declaration": "init(toats: String)",
+            "key.substructure": [
+              {
+                "key.annotated_decl": "<Declaration>let toats: <Type usr=\"s:SS\">String</Type></Declaration>",
+                "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/Musician.swift",
+                "key.kind": "source.lang.swift.decl.var.local",
+                "key.length": 5,
+                "key.name": "toats",
+                "key.offset": 1065,
+                "key.parsed_declaration": "init(toats: String)",
+                "key.typename": "String",
+                "key.usr": "s:vFC17TestDocumentation6ArtistcFMS0_FT5toatsSS_S0_L_5toatsSS"
+              }
+            ],
+            "key.typename": "Artist.Type -> (toats: String) -> Artist",
+            "key.usr": "s:FC17TestDocumentation6ArtistcFMS0_FT5toatsSS_S0_"
+          }
+        ],
+        "key.typename": "Artist.Type",
+        "key.usr": "s:C17TestDocumentation6Artist"
+      }
+    ]
+  },
+  {
+    "key.diagnostic_stage": "source.diagnostic.stage.swift.parse",
+    "key.length": 3370,
+    "key.offset": 0,
+    "key.substructure": [
+      {
+        "key.annotated_decl": "<Declaration>@UIApplicationMain class AppDelegate : <Type usr=\"c:objc(cs)UIResponder\">UIResponder</Type>, <Type usr=\"c:objc(pl)UIApplicationDelegate\">UIApplicationDelegate</Type>, <Type usr=\"c:objc(pl)UISplitViewControllerDelegate\">UISplitViewControllerDelegate</Type></Declaration>",
+        "key.attributes": [
+          {
+            "key.attribute": "source.decl.attribute.UIApplicationMain"
+          }
+        ],
+        "key.bodylength": 3080,
+        "key.bodyoffset": 287,
+        "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/AppDelegate.swift",
+        "key.inheritedtypes": [
+          {
+            "key.name": "UIResponder"
+          },
+          {
+            "key.name": "UIApplicationDelegate"
+          },
+          {
+            "key.name": "UISplitViewControllerDelegate"
+          }
+        ],
+        "key.kind": "source.lang.swift.decl.class",
+        "key.length": 11,
+        "key.name": "AppDelegate",
+        "key.namelength": 11,
+        "key.nameoffset": 207,
+        "key.offset": 207,
+        "key.parsed_declaration": "class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate",
+        "key.runtime_name": "_TtC8__main__11AppDelegate",
+        "key.substructure": [
+          {
+            "key.annotated_decl": "<Declaration>var window: <Type usr=\"c:objc(cs)UIWindow\">UIWindow</Type>?</Declaration>",
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/AppDelegate.swift",
+            "key.kind": "source.lang.swift.decl.var.instance",
+            "key.length": 6,
+            "key.name": "window",
+            "key.namelength": 6,
+            "key.nameoffset": 297,
+            "key.offset": 297,
+            "key.overrides": [
+              {
+                "key.usr": "c:objc(pl)UIApplicationDelegate(py)window"
+              }
+            ],
+            "key.parsed_declaration": "var window: UIWindow?",
+            "key.substructure": [],
+            "key.typename": "UIWindow?",
+            "key.usr": "s:vC17TestDocumentation11AppDelegate6windowGSqCSo8UIWindow_"
+          },
+          {
+            "key.annotated_decl": "<Declaration>func application(application: <Type usr=\"c:objc(cs)UIApplication\">UIApplication</Type>, didFinishLaunchingWithOptions launchOptions: [<Type usr=\"c:objc(cs)NSObject\">NSObject</Type> : <Type usr=\"s:PSs9AnyObject\">AnyObject</Type>]?) -&gt; <Type usr=\"s:Sb\">Bool</Type></Declaration>",
+            "key.bodylength": 498,
+            "key.bodyoffset": 444,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/AppDelegate.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 108,
+            "key.name": "application(_:didFinishLaunchingWithOptions:)",
+            "key.namelength": 108,
+            "key.nameoffset": 326,
+            "key.offset": 326,
+            "key.overrides": [
+              {
+                "key.usr": "c:objc(pl)UIApplicationDelegate(im)application:didFinishLaunchingWithOptions:"
+              }
+            ],
+            "key.parsed_declaration": "func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool",
+            "key.substructure": [],
+            "key.typename": "AppDelegate -> (UIApplication, didFinishLaunchingWithOptions: [NSObject : AnyObject]?) -> Bool",
+            "key.usr": "s:FC17TestDocumentation11AppDelegate11applicationFS0_FTCSo13UIApplication29didFinishLaunchingWithOptionsGSqGVSs10DictionaryCSo8NSObjectPSs9AnyObject____Sb"
+          },
+          {
+            "key.annotated_decl": "<Declaration>func applicationWillResignActive(application: <Type usr=\"c:objc(cs)UIApplication\">UIApplication</Type>)</Declaration>",
+            "key.bodylength": 447,
+            "key.bodyoffset": 1011,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/AppDelegate.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 55,
+            "key.name": "applicationWillResignActive(_:)",
+            "key.namelength": 55,
+            "key.nameoffset": 954,
+            "key.offset": 954,
+            "key.overrides": [
+              {
+                "key.usr": "c:objc(pl)UIApplicationDelegate(im)applicationWillResignActive:"
+              }
+            ],
+            "key.parsed_declaration": "func applicationWillResignActive(application: UIApplication)",
+            "key.substructure": [],
+            "key.typename": "AppDelegate -> (UIApplication) -> ()",
+            "key.usr": "s:FC17TestDocumentation11AppDelegate27applicationWillResignActiveFS0_FCSo13UIApplicationT_"
+          },
+          {
+            "key.annotated_decl": "<Declaration>func applicationDidEnterBackground(application: <Type usr=\"c:objc(cs)UIApplication\">UIApplication</Type>)</Declaration>",
+            "key.bodylength": 366,
+            "key.bodyoffset": 1529,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/AppDelegate.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 57,
+            "key.name": "applicationDidEnterBackground(_:)",
+            "key.namelength": 57,
+            "key.nameoffset": 1470,
+            "key.offset": 1470,
+            "key.overrides": [
+              {
+                "key.usr": "c:objc(pl)UIApplicationDelegate(im)applicationDidEnterBackground:"
+              }
+            ],
+            "key.parsed_declaration": "func applicationDidEnterBackground(application: UIApplication)",
+            "key.substructure": [],
+            "key.typename": "AppDelegate -> (UIApplication) -> ()",
+            "key.usr": "s:FC17TestDocumentation11AppDelegate29applicationDidEnterBackgroundFS0_FCSo13UIApplicationT_"
+          },
+          {
+            "key.annotated_decl": "<Declaration>func applicationWillEnterForeground(application: <Type usr=\"c:objc(cs)UIApplication\">UIApplication</Type>)</Declaration>",
+            "key.bodylength": 163,
+            "key.bodyoffset": 1967,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/AppDelegate.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 58,
+            "key.name": "applicationWillEnterForeground(_:)",
+            "key.namelength": 58,
+            "key.nameoffset": 1907,
+            "key.offset": 1907,
+            "key.overrides": [
+              {
+                "key.usr": "c:objc(pl)UIApplicationDelegate(im)applicationWillEnterForeground:"
+              }
+            ],
+            "key.parsed_declaration": "func applicationWillEnterForeground(application: UIApplication)",
+            "key.substructure": [],
+            "key.typename": "AppDelegate -> (UIApplication) -> ()",
+            "key.usr": "s:FC17TestDocumentation11AppDelegate30applicationWillEnterForegroundFS0_FCSo13UIApplicationT_"
+          },
+          {
+            "key.annotated_decl": "<Declaration>func applicationDidBecomeActive(application: <Type usr=\"c:objc(cs)UIApplication\">UIApplication</Type>)</Declaration>",
+            "key.bodylength": 200,
+            "key.bodyoffset": 2198,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/AppDelegate.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 54,
+            "key.name": "applicationDidBecomeActive(_:)",
+            "key.namelength": 54,
+            "key.nameoffset": 2142,
+            "key.offset": 2142,
+            "key.overrides": [
+              {
+                "key.usr": "c:objc(pl)UIApplicationDelegate(im)applicationDidBecomeActive:"
+              }
+            ],
+            "key.parsed_declaration": "func applicationDidBecomeActive(application: UIApplication)",
+            "key.substructure": [],
+            "key.typename": "AppDelegate -> (UIApplication) -> ()",
+            "key.usr": "s:FC17TestDocumentation11AppDelegate26applicationDidBecomeActiveFS0_FCSo13UIApplicationT_"
+          },
+          {
+            "key.annotated_decl": "<Declaration>func applicationWillTerminate(application: <Type usr=\"c:objc(cs)UIApplication\">UIApplication</Type>)</Declaration>",
+            "key.bodylength": 134,
+            "key.bodyoffset": 2464,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/AppDelegate.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 52,
+            "key.name": "applicationWillTerminate(_:)",
+            "key.namelength": 52,
+            "key.nameoffset": 2410,
+            "key.offset": 2410,
+            "key.overrides": [
+              {
+                "key.usr": "c:objc(pl)UIApplicationDelegate(im)applicationWillTerminate:"
+              }
+            ],
+            "key.parsed_declaration": "func applicationWillTerminate(application: UIApplication)",
+            "key.substructure": [],
+            "key.typename": "AppDelegate -> (UIApplication) -> ()",
+            "key.usr": "s:FC17TestDocumentation11AppDelegate24applicationWillTerminateFS0_FCSo13UIApplicationT_"
+          },
+          {
+            "key.kind": "source.lang.swift.syntaxtype.comment.mark",
+            "key.length": 18,
+            "key.name": "MARK: - Split view",
+            "key.namelength": 0,
+            "key.nameoffset": 0,
+            "key.offset": 2608,
+            "key.substructure": []
+          },
+          {
+            "key.annotated_decl": "<Declaration>func splitViewController(splitViewController: <Type usr=\"c:objc(cs)UISplitViewController\">UISplitViewController</Type>, collapseSecondaryViewController secondaryViewController: <Type usr=\"c:objc(cs)UIViewController\">UIViewController</Type>!, ontoPrimaryViewController primaryViewController: <Type usr=\"c:objc(cs)UIViewController\">UIViewController</Type>!) -&gt; <Type usr=\"s:Sb\">Bool</Type></Declaration>",
+            "key.attributes": [
+              {
+                "key.attribute": "source.decl.attribute.__raw_doc_comment"
+              }
+            ],
+            "key.bodylength": 512,
+            "key.bodyoffset": 2852,
+            "key.filepath": "/Users/jamesbarrow/Dropbox/Pig on a Hill/Projects/Xcode/0021 LittleHedgehogDocs/App/TestDocumentation/TestDocumentation/AppDelegate.swift",
+            "key.kind": "source.lang.swift.decl.function.method.instance",
+            "key.length": 205,
+            "key.name": "splitViewController(_:collapseSecondaryViewController:ontoPrimaryViewController:)",
+            "key.namelength": 205,
+            "key.nameoffset": 2637,
+            "key.offset": 2637,
+            "key.overrides": [
+              {
+                "key.usr": "c:objc(pl)UISplitViewControllerDelegate(im)splitViewController:collapseSecondaryViewController:ontoPrimaryViewController:"
+              }
+            ],
+            "key.parsed_declaration": "func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController:UIViewController!, ontoPrimaryViewController primaryViewController:UIViewController!) -> Bool",
+            "key.substructure": [],
+            "key.typename": "AppDelegate -> (UISplitViewController, collapseSecondaryViewController: UIViewController!, ontoPrimaryViewController: UIViewController!) -> Bool",
+            "key.usr": "s:FC17TestDocumentation11AppDelegate19splitViewControllerFS0_FTCSo21UISplitViewController31collapseSecondaryViewControllerGSQCSo16UIViewController_25ontoPrimaryViewControllerGSQS2___Sb"
+          }
+        ],
+        "key.typename": "AppDelegate.Type",
+        "key.usr": "s:C17TestDocumentation11AppDelegate"
+      }
+    ]
+  }
+]

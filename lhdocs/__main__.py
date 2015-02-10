@@ -11,9 +11,6 @@
 import sys, argparse, os, subprocess, json
 import build_docs
 
-def usage():
-  print "This is a help file!"
-
 def main():
   current_filepath = os.path.dirname(os.path.realpath(__file__))
 
