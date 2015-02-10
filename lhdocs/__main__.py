@@ -34,7 +34,7 @@ def main():
 
   print "\n---------------------------------------------------\n"
 
-  build_docs.parseSourceKitten(sourcekitten_JSON)
+  pages = build_docs.build_sourcekitten(sourcekitten_JSON)
 
   print "\n---------------------------------------------------\n"
 
@@ -43,16 +43,16 @@ def main():
     filename = args.scheme
   else:
     filename = 'Docs'
-  filename = '%s.json' %(filename)
+  filename = '%s.md' %(filename)
 
   output_filepath = os.path.join(current_filepath, args.output, filename)
   print "Saving to file to: '%s'" %(output_filepath)
 
   print "\n---------------------------------------------------\n"
 
-  json_string = json.dumps(sourcekitten_JSON, sort_keys=True, indent=2, separators=(',', ': '))
+  markdown_content = pages[3][1]
   obj = open(output_filepath, 'w+b')
-  obj.write(json_string)
+  obj.write(markdown_content)
   obj.close
 
   print "Saved! Have a nice day. :)"

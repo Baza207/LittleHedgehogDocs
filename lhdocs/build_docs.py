@@ -11,54 +11,142 @@
 import json
 from bs4 import BeautifulSoup
 
-def parseSourceKitten(sourcekitten_JSON):
+def build_sourcekitten(sourcekitten_JSON):
+  pages = []
   for file_JSON in sourcekitten_JSON:
-    parseFile(file_JSON)
+    build_file(pages, file_JSON)
+  return pages
 
-def parseFile(file_JSON):
-  file_structure = file_JSON['key.substructure']
-  for page in file_structure:
-    parseStructure(page)
+def build_file(pages, file_JSON):
+  file_pages = file_JSON['key.substructure']
+  for page in file_pages:
+    pages.append(build_page(page))
 
-def parseStructure(page):
-  structure_name = page['key.name']
-  structure_doc = None
+def build_page(page):
+  page_name = page['key.name']
+  page_content = build_class(page, page_name)
+  
+  sections = page['key.substructure']
+  page_content += build_sections(sections)
 
-  try:
-    structure_doc = parseDocumentationComment(page['key.doc.full_as_xml'])
-  except Exception, e:
-    pass
+  return (page_name, page_content)
 
-  if structure_doc != None and structure_name != None:
-    print "%s - %s" %(structure_name, structure_doc)
+def build_sections(page_sections):
+  content = ''
+  for section in page_sections:
+    content += build_section(section)
+  return content
+
+def build_section(section):
+  kind_components = section['key.kind'].split('.')
+  language = kind_components[2]
+  kind_type = kind_components[4]
+
+  if kind_type in ['var', 'let']:
+    return build_property(section, language)
+  elif kind_type in ['function']:
+    return build_function(section, language)
+  elif kind_type in ['comment']:
+    return build_comment(section, language, kind_components[-1])
   else:
-    print "%s" %(structure_name)
+    print "Unparsed kind: %s\n%s" %(kind_type, json.dumps(section, sort_keys=True, indent=2, separators=(',', ': ')))
+    return ''
 
+'''
+# Class Name <key.name>
+[Description] <key.doc.full_as_xml>.para.get_text()
+
+'''
+def build_class(page, name):
+  description = ''
   try:
-    parseSubstructure(page['key.substructure'])
+    description_soup = BeautifulSoup(page['key.doc.full_as_xml'])
+    description = description_soup.para.get_text()
   except Exception, e:
     pass
+  return '# %s\n%s\n\n' %(name, description)
 
-def parseSubstructure(file_substructure):
-  for substructure in file_substructure:
-    substructure_name = substructure['key.name']
-    substructure_doc = None
+'''
+### Property Name <key.name>
+[Description] <key.doc.full_as_xml>.para.get_text()
 
-    try:
-      substructure_doc = parseDocumentationComment(substructure['key.doc.full_as_xml'])
-    except Exception, e:
-      pass
+**Declaration**
+> **[Language]**
+> ``` <language>
+[Declaration] <key.parsed_declaration>
+```
+---
+'''
+def build_property(section, language):
+  name = section['key.name']
+  description = build_description(section)
+  declaration = section['key.parsed_declaration']
+  return '<br>\n\n### %s\n%s\n\n**Declaration**\n> %s  \n> ```**%s**\n%s\n```\n---\n\n' %(name, description, language.capitalize(), language, declaration)
 
-    if substructure_doc != None and substructure_name != None:
-      print "  %s - %s" %(substructure_name, substructure_doc)
-    else:
-      print "  %s" %(substructure_name)
+'''
+### Function Name <key.name>
+[Description] key.doc.full_as_xml <XML>.para.get_text()
 
-def parseDocumentationComment(doc_comment):
-  doc = None
+Declaration
+> [Lang]
+> [Declaration] key.parsed_declaration
+'''
+def build_function(section, language):
+  name = section['key.name']
+  description = build_description(section)
+  declaration = section['key.parsed_declaration']
+  attributes = build_attributes(section)
+  return '<br>\n\n### %s\n%s\n\n**Declaration**\n> %s  \n> ```**%s**\n%s\n```\n%s---\n\n' %(name, description, language.capitalize(), language, declaration, attributes)
+
+'''
+## MARK Name <key.name>.split(' ')[-1]
+'''
+def build_comment(section, language, comment_type):
+  if comment_type in ('mark'):
+    name = section['key.name'].split(' ')[-1]
+    return '## %s\n' %(name)
+  else:
+    print "Unparsed comment: %s\n%s" %(comment_type, json.dumps(section, sort_keys=True, indent=2, separators=(',', ': ')))
+    return ''
+
+'''
+[Description]
+'''
+def build_description(section):
+  description = ''
   try:
-    soup = BeautifulSoup(doc_comment)
-    doc = soup.para.get_text()
+    soup = BeautifulSoup(section['key.doc.full_as_xml'])
+    description = soup.para.get_text()
   except Exception, e:
     pass
-  return doc
+  return description
+
+'''
+**Parameters**
+<table>
+  <tr><td>[Parameter]</td><td><[Description]/td></tr>
+  ...
+</table>
+
+**Return Value**
+[Return Description]
+'''
+def build_attributes(section):
+  content = ''
+  try:
+    soup = BeautifulSoup(section['key.doc.full_as_xml'])
+    has_contents = False
+    for parameter in soup.find_all('parameter'):
+      has_contents = True
+      content += '<tr><td> `%s` </td><td> %s </td></tr>\n' %(parameter.find('name').get_text(), parameter.para.get_text())
+
+    if has_contents == True:
+      content = '\n**Parameters**\n<table>\n' + content
+      content += '<table>\n'
+
+    return_description = soup.resultdiscussion.para.get_text()
+    if return_description != None:
+      content += '\n**Return Value**  \n%s\n' %(return_description)
+  except Exception, e:
+    pass
+  return content + '\n'
