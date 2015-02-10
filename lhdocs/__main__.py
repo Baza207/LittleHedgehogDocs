@@ -8,16 +8,13 @@
 
 #!/usr/bin/env python
 
-import sys, argparse, os, subprocess, json
-import build_docs
+import sys, argparse, os, subprocess, json, build_docs, save_docs
 
 def main():
-  current_filepath = os.path.dirname(os.path.realpath(__file__))
-
   parser = argparse.ArgumentParser(prog='LittleHedgehogDocs', description='Parse Swift documentation into Markdown files.')
   parser.add_argument('-project', dest='project', help='The Xcode project to parse.')
   parser.add_argument('-scheme', dest='scheme', help='The Xcode scheme to parse.')
-  parser.add_argument('-output', dest='output', default='', help='The output file.')
+  parser.add_argument('-output', dest='output', default='~/', help='The output file.')
 
   args = parser.parse_args()
   subprocess.call('clear')
@@ -32,30 +29,15 @@ def main():
   sourcekitten_result = subprocess.check_output(['sourcekitten', 'doc', '-project', args.project, '-scheme', args.scheme])
   sourcekitten_JSON = json.loads(sourcekitten_result)
 
-  print "\n---------------------------------------------------\n"
-
+  print "Building docs..."
   pages = build_docs.build_sourcekitten(sourcekitten_JSON)
 
-  print "\n---------------------------------------------------\n"
-
-  filename = None
-  if args.scheme != None:
-    filename = args.scheme
-  else:
-    filename = 'Docs'
-  filename = '%s.md' %(filename)
-
-  output_filepath = os.path.join(current_filepath, args.output, filename)
-  print "Saving to file to: '%s'" %(output_filepath)
+  print "Saving docs..."
+  save_docs.save_pages(pages, args.output, args.scheme)
 
   print "\n---------------------------------------------------\n"
 
-  markdown_content = pages[3][1]
-  obj = open(output_filepath, 'w+b')
-  obj.write(markdown_content)
-  obj.close
-
-  print "Saved! Have a nice day. :)"
+  print "Complete! Have a nice day. :)"
 
   print "\n---------------------------------------------------\n"
 
