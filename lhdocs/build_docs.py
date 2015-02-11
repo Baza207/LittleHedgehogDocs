@@ -159,4 +159,4 @@ def build_attributes(section):
 Built with Little Hedgehog Docs by Pig on a Hill Productions.
 '''
 def build_page_footer():
-  return '<div class="footer" align="center"><sub>Built with <a href="https://github.com/Baza207/LittleHedgehogDocs" target="_blank">Little Hedgehog Docs</a> by <a href="http://pigonahill.com" target="_blank">Pig on a Hill Productions</a>.</sub></div>\n'
+  return '<div class="footer" align="center"><sub>Built with <a href="https://github.com/Baza207/LittleHedgehogDocs" target="_blank">Little Hedgehog Docs</a> by <a href="mailto:james@pigonahill.com" target="_blank">James Barrow</a> - <a href="http://pigonahill.com" target="_blank">Pig on a Hill Productions</a>.</sub></div>\n'
