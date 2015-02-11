@@ -30,11 +30,13 @@ def build_page(page):
     page_name = page['key.name']
     page_content = build_class(page, page_name)
 
+    sections = None
     try:
         sections = page['key.substructure']
-        page_content += build_sections(sections)
-    except Exception, e:
+    except KeyError:
         pass
+
+    page_content += build_sections(sections)
     page_content += build_page_footer()
 
     return (page_name, page_content)
@@ -42,8 +44,11 @@ def build_page(page):
 
 def build_sections(page_sections):
     content = ''
-    for section in page_sections:
-        content += build_section(section)
+    try:
+        for section in page_sections:
+            content += build_section(section)
+    except TypeError:
+        pass
     return content
 
 
@@ -78,7 +83,7 @@ def build_class(page, name):
     try:
         description_soup = BeautifulSoup(page['key.doc.full_as_xml'])
         description = description_soup.para.get_text()
-    except Exception, e:
+    except (KeyError, AttributeError):
         pass
     return '# %s\n%s\n' % (name, description)
 
@@ -168,7 +173,7 @@ def build_description(section):
     try:
         soup = BeautifulSoup(section['key.doc.full_as_xml'])
         description = soup.para.get_text()
-    except Exception, e:
+    except (KeyError, AttributeError):
         pass
     return description
 
@@ -188,9 +193,12 @@ def build_attributes(section):
         has_contents = False
         for parameter in soup.find_all('parameter'):
             has_contents = True
+
+            name = parameter.find('name').get_text()
+            description = parameter.para.get_text()
             content += '<tr><td> `%s` </td><td> %s </td></tr>\n' % (
-                parameter.find('name').get_text(),
-                parameter.para.get_text()
+                name,
+                description
             )
 
         if has_contents is True:
@@ -200,8 +208,9 @@ def build_attributes(section):
         return_description = soup.resultdiscussion.para.get_text()
         if return_description is not None:
             content += '\n**Return Value**  \n%s\n' % (return_description)
-    except Exception, e:
+    except (KeyError, AttributeError):
         pass
+
     return content + '\n'
 
 

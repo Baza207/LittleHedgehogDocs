@@ -10,6 +10,7 @@
 # !/usr/bin/env python
 
 import os
+from errno import EEXIST
 
 
 def save_pages(pages, filepath, name):
@@ -25,8 +26,9 @@ def create_root_dir(filepath, name):
     output_filepath = os.path.join(filepath, name)
     try:
         os.makedirs(output_filepath)
-    except:
-        pass
+    except OSError, e:
+        if e.errno != EEXIST:
+            raise e
     return output_filepath
 
 
