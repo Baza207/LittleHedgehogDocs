@@ -75,7 +75,7 @@ def build_class(page, name):
 [Description] <key.doc.full_as_xml>.para.get_text()
 
 **Declaration**
-> **[Language]**
+> <sub>**[Language]**</sub>
 > ``` <language>
 [Declaration] <key.parsed_declaration>
 ```
@@ -85,7 +85,7 @@ def build_property(section, language):
   name = section['key.name']
   description = build_description(section)
   declaration = section['key.parsed_declaration']
-  return '<br>\n\n### %s\n%s\n\n**Declaration**\n> %s  \n> ```**%s**\n%s\n```\n---\n\n' %(name, description, language.capitalize(), language, declaration)
+  return '<br>\n\n### %s\n%s\n\n**Declaration**\n> <sub>**%s**</sub>  \n> ```%s  \n%s\n```\n---\n\n' %(name, description, language.capitalize(), language, declaration)
 
 '''
 ### Function Name <key.name>
@@ -100,7 +100,7 @@ def build_function(section, language):
   description = build_description(section)
   declaration = section['key.parsed_declaration']
   attributes = build_attributes(section)
-  return '<br>\n\n### %s\n%s\n\n**Declaration**\n> %s  \n> ```**%s**\n%s\n```\n%s---\n\n' %(name, description, language.capitalize(), language, declaration, attributes)
+  return '<br>\n\n### %s\n%s\n\n**Declaration**\n> <sub>**%s**</sub>  \n> ```%s  \n%s\n```\n%s---\n\n' %(name, description, language.capitalize(), language, declaration, attributes)
 
 '''
 ## MARK Name <key.name>.split(' ')[-1]
