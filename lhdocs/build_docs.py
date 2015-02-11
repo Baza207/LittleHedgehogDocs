@@ -9,7 +9,7 @@
 
 # !/usr/bin/env python
 
-import json
+from debug import printJSON
 from bs4 import BeautifulSoup
 
 
@@ -64,14 +64,9 @@ def build_section(section):
     elif kind_type in ['comment']:
         return build_comment(section, language, kind_components[-1])
     else:
-        print "Unparsed kind: %s\n%s" % (
+        print "Unparsed section kind: %s\n%s\n" % (
             kind_type,
-            json.dumps(
-                section,
-                sort_keys=True,
-                indent=2,
-                separators=(',', ': ')
-            )
+            printJSON(section)
         )
     return ''
 
@@ -157,12 +152,7 @@ def build_comment(section, language, comment_type):
     else:
         print "Unparsed comment: %s\n%s" % (
             comment_type,
-            json.dumps(
-                section,
-                sort_keys=True,
-                indent=2,
-                separators=(',', ': ')
-            )
+            printJSON(section)
         )
     return ''
 
