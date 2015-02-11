@@ -3,18 +3,41 @@
 # LittleHedgehogDocs
 #
 # Created by James Barrow on 09/02/2015.
-# Copyright (c) 2015 James Barrow - Pig on a Hill Productions. All rights reserved.
+# Copyright (c) 2015 James Barrow - Pig on a Hill Productions.
+# All rights reserved.
 #
 
 #!/usr/bin/env python
 
-import sys, argparse, subprocess, json, build_docs, save_docs
+import sys
+import argparse
+import subprocess
+import json
+import build_docs
+import save_docs
+
 
 def main():
-    parser = argparse.ArgumentParser(prog='LittleHedgehogDocs', description='Parse Swift documentation into Markdown files.')
-    parser.add_argument('-project', dest='project', help='The Xcode project to parse.')
-    parser.add_argument('-scheme', dest='scheme', help='The Xcode scheme to parse.')
-    parser.add_argument('-output', dest='output', default='~/', help='The output file.')
+    parser = argparse.ArgumentParser(
+        prog='LittleHedgehogDocs',
+        description='Parse Swift documentation into Markdown files.'
+    )
+    parser.add_argument(
+        '-project',
+        dest='project',
+        help='The Xcode project to parse.'
+    )
+    parser.add_argument(
+        '-scheme',
+        dest='scheme',
+        help='The Xcode scheme to parse.'
+    )
+    parser.add_argument(
+        '-output',
+        dest='output',
+        default='~/',
+        help='The output file.'
+    )
 
     args = parser.parse_args()
     subprocess.call('clear')
@@ -26,7 +49,14 @@ def main():
     print "\n---------------------------------------------------\n"
 
     print "Runnig SourceKitten..."
-    sourcekitten_result = subprocess.check_output(['sourcekitten', 'doc', '-project', args.project, '-scheme', args.scheme])
+    sourcekitten_result = subprocess.check_output([
+        'sourcekitten',
+        'doc',
+        '-project',
+        args.project,
+        '-scheme',
+        args.scheme
+    ])
     sourcekitten_JSON = json.loads(sourcekitten_result)
 
     print "Building docs..."
