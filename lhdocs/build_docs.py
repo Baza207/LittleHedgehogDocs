@@ -16,30 +16,40 @@ from bs4 import BeautifulSoup
 def build_sourcekitten(sourcekitten_JSON):
     pages = []
     for file_JSON in sourcekitten_JSON:
-        build_file(pages, file_JSON)
+        file_pages = file_JSON['key.substructure']
+        for page in file_pages:
+            markdown_page = build_page(page)
+            if markdown_page is not None:
+                pages.append(markdown_page)
     return pages
 
 
-def build_file(pages, file_JSON):
-    file_pages = file_JSON['key.substructure']
-    for page in file_pages:
-        pages.append(build_page(page))
-
-
 def build_page(page):
-    page_name = page['key.name']
-    page_content = build_class(page, page_name)
+    page_type = page['key.kind'].split('.')[-1]
+    if page_type in ['class']:
+        page_name = page['key.name']
+        page_content = build_class(page, page_name)
 
-    sections = None
-    try:
-        sections = page['key.substructure']
-    except KeyError:
-        pass
+        sections = None
+        try:
+            sections = page['key.substructure']
+        except KeyError:
+            pass
 
-    page_content += build_sections(sections)
-    page_content += build_page_footer()
+        page_content += build_sections(sections)
+        page_content += build_page_footer()
 
-    return (page_name, page_content)
+        return (page_name, page_content)
+    elif page_type in ['global', 'enum', 'extension', 'protocol', 'free']:
+        return None  # TODO: Parse global page types into 1 page per type.
+    elif page_type in ['mark']:
+        return None  # Never make pages for comments
+    else:
+        print "Unparsed page type: %s\n%s\n" % (
+            page_type,
+            printJSON(page)
+        )
+        return None
 
 
 def build_sections(page_sections):
@@ -61,6 +71,10 @@ def build_section(section):
         return build_property(section, language)
     elif kind_type in ['function']:
         return build_function(section, language)
+    elif kind_type in ['struct']:
+        return build_struct(section, language)
+    elif kind_type in ['enum']:
+        return build_enum(section, language)
     elif kind_type in ['comment']:
         return build_comment(section, language, kind_components[-1])
     else:
@@ -115,11 +129,14 @@ def build_property(section, language):
 
 
 # ### Function Name <key.name>
-# [Description] key.doc.full_as_xml <XML>.para.get_text()
+# [Description] <key.doc.full_as_xml>.para.get_text()
 #
-# Declaration
-# > [Lang]
-# > [Declaration] key.parsed_declaration
+# **Declaration**
+# > <sub>**[Language]**</sub>
+# > ``` <language>
+# [Declaration] <key.parsed_declaration>
+# ```
+# ---
 def build_function(section, language):
     name = section['key.name']
     description = build_description(section)
@@ -141,6 +158,126 @@ def build_function(section, language):
         language.lower(),
         declaration,
         attributes
+    )
+
+
+# {
+#     <Constant>
+#     ...
+# }
+#
+# - AND -
+#
+# **Constants**
+# - `<Constant Declaration>`
+# ...
+def build_constants(section):
+    constants = ''
+    constants_detail = ''
+    try:
+        sections = section['key.substructure']
+        has_contents = False
+        for constant in sections:
+            has_contents = True
+            name = constant['key.name']
+            declaration = constant['key.parsed_declaration']
+            description = build_description(constant)
+            constants += '    %s\n' % (declaration)
+            constants_detail += '- `%s`\n%s\n' % (name, description)
+
+        if has_contents is True:
+            constants = '{\n' + constants + '}'
+            constants_detail = '**Constants**\n' + constants_detail
+    except KeyError:
+        pass
+    return (constants, constants_detail)
+
+
+# ### Structure Name <key.name>
+# [Description] <key.doc.full_as_xml>.para.get_text()
+#
+# **Declaration**
+# > <sub>**[Language]**</sub>
+# > ``` <language>
+# [Declaration] <key.parsed_declaration> {
+#     <Constant>
+#     ...
+# }
+# ```
+# **Constants**
+# - `<Constant Declaration>`
+# ...
+# ---
+def build_struct(section, language):
+    name = section['key.name']
+    description = build_description(section)
+    declaration = section['key.parsed_declaration']
+    (constants, constants_detail) = build_constants(section)
+    return (
+        '<br>\n\n'
+        '### %s\n'
+        '%s\n\n'
+        '**Declaration**\n'
+        '> <sub>**%s**</sub>  \n'
+        '> ```%s  \n'
+        '%s'
+        '%s\n'
+        '```\n\n'
+        '%s'
+        '---\n\n') % (
+        name,
+        description,
+        language.capitalize(),
+        language.lower(),
+        declaration,
+        constants,
+        constants_detail
+    )
+
+
+# ### Enum Name <key.name>
+# [Description] <key.doc.full_as_xml>.para.get_text()
+#
+# **Declaration**
+# > <sub>**[Language]**</sub>
+# > ``` <language>
+# [Declaration] <key.parsed_declaration> {
+#     <Constant>
+#     ...
+# }
+# ```
+# **Constants**
+# - `<Constant Declaration>`
+# ...
+# ---
+# FIXME: Enum constants don't seem to be provided by SourceKitten.
+# It needs to be checked if they're being returned in another place
+# or if it's a parsing issue with SourceKitten.
+def build_enum(section, language):
+    name = section['key.name']
+    description = build_description(section)
+    declaration = section['key.parsed_declaration']
+    (constants, constants_detail) = build_constants(section)
+    return (
+        '<br>\n\n'
+        '### %s\n'
+        '%s\n\n'
+        '**Declaration**\n'
+        '> <sub>**%s**</sub>  \n'
+        '> ```%s  \n'
+        '%s'
+        '%s\n'
+        '```\n\n'
+        '%s'
+        '---\n\n'
+    ) % (
+        name,
+        description,
+        language.capitalize(),
+        language.lower(),
+        declaration,
+        constants,
+        constants_detail
     )
 
 
