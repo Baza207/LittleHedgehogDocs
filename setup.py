@@ -33,7 +33,7 @@ setup(
   version=version,
   description='Little Hedgehog Docs - A Swift documentation to Markdown parser.',
   author=author,
-  author_email='baza207@me.com',
+  author_email='james@pigonahill.com',
   url='https://github.com/Baza207/LittleHedgehogDocs',
   licence=licence,
   zip_safe=False,

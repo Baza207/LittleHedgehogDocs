@@ -1,2 +1,47 @@
 # LittleHedgehogDocs
-A Swift documentation to Markdown parser.
+A Swift to Markdown document builder.
+
+Little Hedgehog Docs is a Swift documentation comments to Markdown document builder. It runs off of [SourceKitten](https://github.com/jpsim/SourceKitten) to parse the documentation comments from Xcode and then builds Markdown files for use in GitHub Wiki.
+
+**NOTE:** This is currently still a work in progress. I want to be able to include Obj-C documentation in the future, as well as expand the range of the documents built for Swift.
+
+## Installing
+
+On it's way...
+
+## Command Line Useage
+
+On it's way...
+
+## Roadmap
+##### 0.1
+- [x] Use the command line and parse in argemnts.
+- [x] Basic parsing and building of documentation for classes, functions and paramiters.
+- [x] Save markdown files to a directory.
+- [ ] Create a working Python package for the project.
+
+##### 0.2
+- [ ] Parse `&amp;` and similar symbols correctly.
+- [ ] Deal with global functions, paramiters, structs, enums, protocols, extensions and functions correctly.
+- [ ] Don't parse comments that are not in a class as a seperate file.
+
+##### 0.3
+- [ ] Add a table of contents with linking to the correct section at the beginig of each page.
+- [ ] Save pages into folders depending on the tpye (class, struct, etc).
+- [ ] Save global functions, etc into a single file (i.e. 1 global functions file, 1 global paramiters file, etc).
+
+##### 0.4
+- [ ] Add more options to set via the command line (clean before save, parse TODO: and/or FIXME:, etc).
+- [ ] Only build items for specific accessibility options.
+- [ ] Add the ability to build docs for single files.
+
+##### 0.5
+- [ ] Build Obj-C docs.
+
+## License
+
+MIT Licence
+
+## Creator
+
+[James Barrow](james@pigonahill.com)
