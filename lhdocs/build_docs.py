@@ -28,6 +28,7 @@ def build_page(page):
   
   sections = page['key.substructure']
   page_content += build_sections(sections)
+  page_content += build_page_footer()
 
   return (page_name, page_content)
 
@@ -64,7 +65,7 @@ def build_class(page, name):
     description = description_soup.para.get_text()
   except Exception, e:
     pass
-  return '# %s\n%s\n\n' %(name, description)
+  return '# %s\n%s\n' %(name, description)
 
 '''
 ### Property Name <key.name>
@@ -150,3 +151,9 @@ def build_attributes(section):
   except Exception, e:
     pass
   return content + '\n'
+
+'''
+Built with Little Hedgehog Docs by Pig on a Hill Productions.
+'''
+def build_page_footer():
+  return '<div class="footer" align="center"><sub>Built with <a href="https://github.com/Baza207/LittleHedgehogDocs" target="_blank">Little Hedgehog Docs</a> by <a href="http://pigonahill.com" target="_blank">Pig on a Hill Productions</a>.</sub></div>\n'
