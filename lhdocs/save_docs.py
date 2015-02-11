@@ -33,6 +33,5 @@ def create_root_dir(filepath, name):
 def save_page(filepath, name, page):
     filename = '%s.md' % (name)
     output_filepath = os.path.join(filepath, filename)
-    obj = open(output_filepath, 'w+b')
-    obj.write(page.encode('UTF-8'))
-    obj.close
+    with open(output_filepath, 'w+b') as obj:
+        obj.write(page.encode('UTF-8'))
