@@ -28,8 +28,8 @@ def create_root_dir(filepath, name):
   return output_filepath
 
 def save_page(filepath, name, page):
-  filename = '%s.mb' %(name)
+  filename = '%s.md' %(name)
   output_filepath = os.path.join(filepath, filename)
   obj = open(output_filepath, 'w+b')
-  obj.write(page)
+  obj.write(page.encode('UTF-8'))
   obj.close
