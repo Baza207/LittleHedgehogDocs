@@ -11,6 +11,7 @@
 
 from debug import printJSON
 from bs4 import BeautifulSoup
+import re
 
 
 def build_sourcekitten(sourcekitten_JSON):
@@ -284,8 +285,19 @@ def build_enum(section, language):
 # ## MARK Name <key.name>.split(' ')[-1]
 def build_comment(section, language, comment_type):
     if comment_type in ('mark'):
-        name = section['key.name'].split(' ')[-1]
-        return '## %s\n' % (name)
+        name_components = section['key.name']
+        match = re.match(
+            '^MARK:\s*(?P<heading>-)?\s*(?P<name>.*)$',
+            name_components
+        )
+        name = match.group('name')
+        header = '###'
+        if match.group('heading'):
+            header = '##'
+        return '\n<br>\n%s %s  ' % (
+            header,
+            name
+        )
     else:
         print "Unparsed comment: %s\n%s" % (
             comment_type,
