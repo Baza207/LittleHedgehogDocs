@@ -26,8 +26,11 @@ def build_page(page):
   page_name = page['key.name']
   page_content = build_class(page, page_name)
   
-  sections = page['key.substructure']
-  page_content += build_sections(sections)
+  try:
+    sections = page['key.substructure']
+    page_content += build_sections(sections)
+  except Exception, e:
+    pass
   page_content += build_page_footer()
 
   return (page_name, page_content)
