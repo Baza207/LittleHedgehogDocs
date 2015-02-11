@@ -18,12 +18,17 @@ On it's way...
 - [x] Use the command line and parse in argemnts.
 - [x] Basic parsing and building of documentation for classes, functions and paramiters.
 - [x] Save markdown files to a directory.
+- [x] Don't parse comments that are not in a class as a seperate file.
+- [ ] Parse `&amp;` and similar symbols correctly.
 - [ ] Create a working Python package for the project.
 
 ##### 0.2
-- [ ] Parse `&amp;` and similar symbols correctly.
-- [ ] Deal with global functions, paramiters, structs, enums, protocols, extensions and functions correctly.
-- [ ] Don't parse comments that are not in a class as a seperate file.
+- [ ] Build all global functions into pne file.
+- [ ] Build all global paramiters into pne file.
+- [ ] Build all global structs into pne file.
+- [ ] Build all global enums into pne file.
+- [ ] Build all global protocols into pne file.
+- [ ] Build extension classes.
 
 ##### 0.3
 - [ ] Add a table of contents with linking to the correct section at the beginig of each page.
