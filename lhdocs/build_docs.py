@@ -7,7 +7,7 @@
 # All rights reserved.
 #
 
-#!/usr/bin/env python
+# !/usr/bin/env python
 
 import json
 from bs4 import BeautifulSoup

@@ -8,6 +8,6 @@ install:
     - python setup.py install
 # command to run before scripts
 before_script:
-    - flake8 --max-complexity=10 --statistics --exclude=migrations --benchmark --ignore=E265 .
+    - flake8 --max-complexity=10 --statistics --exclude=migrations --benchmark .
 # command to run scripts
 script: nosetests

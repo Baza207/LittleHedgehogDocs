@@ -7,7 +7,7 @@
 # All rights reserved.
 #
 
-#!/usr/bin/env python
+# !/usr/bin/env python
 
 __title__ = 'Little Hedgehog Docs'
 __version__ = '0.1.0.dev1'
