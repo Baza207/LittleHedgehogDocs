@@ -48,6 +48,7 @@ setup(
     licence=licence,
     zip_safe=False,
     packages=[package],
+    scripts=['scripts/lhdocs'],
     install_requires=['beautifulsoup4==4.3.2'],
     classifiers=[
         'Development Status :: 1 - Development',
