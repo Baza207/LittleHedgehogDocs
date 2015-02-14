@@ -14,14 +14,14 @@ On it's way...
 On it's way...
 
 ## Roadmap
-##### 0.1
+##### 0.1 - Complete
 - [x] Use the command line and parse in argemnts.
 - [x] Basic parsing and building of documentation for classes, functions and paramiters.
 - [x] Save markdown files to a directory.
 - [x] Don't parse comments that are not in a class as a seperate file.
-- [ ] Create a working Python package for the project.
+- [x] Create a working Python package for the project.
 
-##### 0.2
+##### 0.2 - _Current_
 - [ ] Build all global functions into pne file.
 - [ ] Build all global paramiters into pne file.
 - [ ] Build all global structs into pne file.
