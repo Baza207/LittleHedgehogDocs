@@ -15,23 +15,19 @@ import lhdocs
 from setuptools import setup
 
 
-package = 'lhdocs'
-version = lhdocs.__version__
-author = lhdocs.__author__
-license = lhdocs.__license__
 description = (
     'Little Hedgehog Docs - '
     'A Swift documentation to Markdown parser.'
 )
 
 setup(
-    name=package,
-    version=version,
+    name='lhdocs',
+    version=lhdocs.__version__,
     description=description,
-    author=author,
+    author=lhdocs.__author__,
     author_email='james@pigonahill.com',
     url='https://github.com/Baza207/LittleHedgehogDocs',
-    license=license,
+    license=lhdocs.__license__,
     zip_safe=False,
     packages=[package],
     scripts=['scripts/lhdocs'],
