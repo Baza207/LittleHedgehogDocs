@@ -19,7 +19,6 @@ On it's way...
 - [x] Basic parsing and building of documentation for classes, functions and paramiters.
 - [x] Save markdown files to a directory.
 - [x] Don't parse comments that are not in a class as a seperate file.
-- [ ] Parse `&amp;` and similar symbols correctly.
 - [ ] Create a working Python package for the project.
 
 ##### 0.2
