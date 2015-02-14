@@ -1,5 +1,5 @@
 #
-# mian.py
+# __mian__.py
 # LittleHedgehogDocs
 #
 # Created by James Barrow on 09/02/2015.
