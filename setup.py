@@ -9,8 +9,6 @@
 
 # !/usr/bin/env python
 
-import os
-import re
 import lhdocs
 from setuptools import setup
 
