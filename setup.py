@@ -29,7 +29,7 @@ setup(
     url='https://github.com/Baza207/LittleHedgehogDocs',
     license=lhdocs.__license__,
     zip_safe=False,
-    packages=[package],
+    packages=['lhdocs'],
     scripts=['scripts/lhdocs'],
     install_requires=['beautifulsoup4==4.3.2'],
     classifiers=[
