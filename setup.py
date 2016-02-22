@@ -8,15 +8,13 @@
 #
 
 # !/usr/bin/env python
+# flake8: noqa
 
 import lhdocs
 from setuptools import setup
 
 
-description = (
-    'Little Hedgehog Docs - '
-    'A Swift documentation to Markdown parser.'
-)
+description = 'Little Hedgehog Docs - A Swift documentation to Markdown parser.'
 
 setup(
     name='lhdocs',
