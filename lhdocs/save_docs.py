@@ -22,7 +22,10 @@ def save_pages(pages, filepath, name):
 
 def create_root_dir(filepath, name):
     if name is None:
-        name = 'Docs'
+        name = 'Docs.wiki'
+    elif name.split('.')[-1] != 'wiki':
+        name += '.wiki'
+
     output_filepath = os.path.join(filepath, name)
     try:
         os.makedirs(output_filepath)
