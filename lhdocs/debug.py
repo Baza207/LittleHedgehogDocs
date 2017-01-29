@@ -1,7 +1,7 @@
 import json
 
 
-def printJSON(string):
+def print_json(string):
     print json.dumps(
         string,
         sort_keys=True,

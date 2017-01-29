@@ -9,15 +9,15 @@
 
 # !/usr/bin/env python
 
-from debug import printJSON
+from debug import print_json
 from bs4 import BeautifulSoup
 import re
 
 
-def build_sourcekitten(sourcekitten_JSON):
+def build_sourcekitten(sourcekitten_json):
     pages = []
-    for file_JSON in sourcekitten_JSON:
-        file_pages = file_JSON['key.substructure']
+    for file_json in sourcekitten_json:
+        file_pages = file_json['key.substructure']
         for page in file_pages:
             markdown_page = build_page(page)
             if markdown_page is not None:
@@ -48,7 +48,7 @@ def build_page(page):
     else:
         print "Unparsed page type: %s\n%s\n" % (
             page_type,
-            printJSON(page)
+            print_json(page)
         )
         return None
 
@@ -81,7 +81,7 @@ def build_section(section):
     else:
         print "Unparsed section kind: %s\n%s\n" % (
             kind_type,
-            printJSON(section)
+            print_json(section)
         )
     return ''
 
@@ -301,7 +301,7 @@ def build_comment(section, language, comment_type):
     else:
         print "Unparsed comment: %s\n%s" % (
             comment_type,
-            printJSON(section)
+            print_json(section)
         )
     return ''
 
