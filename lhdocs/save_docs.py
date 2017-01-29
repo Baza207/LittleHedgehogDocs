@@ -15,6 +15,7 @@ from errno import EEXIST
 
 def save_pages(pages, filepath, name):
     output_filepath = create_root_dir(filepath, name)
+    print output_filepath
 
     for (name, page) in pages:
         save_page(output_filepath, name, page)

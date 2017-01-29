@@ -70,7 +70,7 @@ def main():
     print "Building docs..."
     pages = build_docs.build_sourcekitten(sourcekitten_json)
 
-    print "Saving docs..."
+    print "Saving docs to..."
     save_docs.save_pages(pages, args.output, args.module_name)
 
     print "\n---------------------------------------------------\n"
