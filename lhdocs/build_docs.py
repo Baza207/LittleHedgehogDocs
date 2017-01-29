@@ -47,10 +47,13 @@ def build_page(page):
     elif page_type in ['mark']:
         return None  # Never make pages for comments
     else:
-        print "Unparsed page type: %s\n%s\n" % (
-            page_type,
-            print_json(page)
+        print "Unparsed page type: %s" % (
+            page_type
         )
+        # print "Unparsed page type: %s\n%s\n" % (
+        #     page_type,
+        #     print_json(page)
+        # )
         return None
 
 
@@ -80,10 +83,13 @@ def build_section(section):
     elif kind_type in ['comment']:
         return build_comment(section, language, kind_components[-1])
     else:
-        print "Unparsed section kind: %s\n%s\n" % (
-            kind_type,
-            print_json(section)
+        print "Unparsed section kind: %s" % (
+            kind_type
         )
+        # print "Unparsed section kind: %s\n%s\n" % (
+        #     kind_type,
+        #     print_json(section)
+        # )
     return ''
 
 
@@ -300,10 +306,13 @@ def build_comment(section, language, comment_type):
             name
         )
     else:
-        print "Unparsed comment: %s\n%s" % (
-            comment_type,
-            print_json(section)
+        print "Unparsed comment: %s" % (
+            comment_type
         )
+        # print "Unparsed comment: %s\n%s" % (
+        #     comment_type,
+        #     print_json(section)
+        # )
     return ''
 
 
