@@ -61,10 +61,10 @@ def main():
         '-scheme',
         ' '.join(args.scheme)
     ])
-    sourcekitten_JSON = json.loads(sourcekitten_result)
+    sourcekitten_json = json.loads(sourcekitten_result)
 
     print "Building docs..."
-    pages = build_docs.build_sourcekitten(sourcekitten_JSON)
+    pages = build_docs.build_sourcekitten(sourcekitten_json)
 
     print "Saving docs..."
     save_docs.save_pages(pages, args.output, args.scheme)
