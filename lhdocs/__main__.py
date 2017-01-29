@@ -26,12 +26,14 @@ def main():
         '-project',
         dest='project',
         nargs='+',
+        required=True,
         help='The Xcode project to parse.'
     )
     parser.add_argument(
         '-scheme',
         dest='scheme',
         nargs='+',
+        required=True,
         help='The Xcode scheme to parse.'
     )
     parser.add_argument(
