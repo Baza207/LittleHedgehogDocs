@@ -30,11 +30,11 @@ def main():
         help='The Xcode project to parse.'
     )
     parser.add_argument(
-        '-scheme',
-        dest='scheme',
+        '-module-name',
+        dest='module_name',
         nargs='+',
         required=True,
-        help='The Xcode scheme to parse.'
+        help='The name of the module to parse.'
     )
     parser.add_argument(
         '-output',
@@ -56,11 +56,11 @@ def main():
     sourcekitten_result = subprocess.check_output([
         'sourcekitten',
         'doc',
+        '--module-name',
+        ' '.join(args.module_name),
         '--',
         '-project',
-        ' '.join(args.project),
-        '-scheme',
-        ' '.join(args.scheme)
+        ' '.join(args.project)
     ])
     sourcekitten_json = json.loads(sourcekitten_result)
 
