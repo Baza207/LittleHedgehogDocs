@@ -92,7 +92,7 @@ def build_section(section):
 def build_class(page, name):
     description = ''
     try:
-        description_soup = BeautifulSoup(page['key.doc.full_as_xml'])
+        description_soup = BeautifulSoup(page['key.doc.full_as_xml'], "lxml")
         description = description_soup.para.get_text()
     except (KeyError, AttributeError):
         pass
@@ -311,7 +311,7 @@ def build_comment(section, language, comment_type):
 def build_description(section):
     description = ''
     try:
-        soup = BeautifulSoup(section['key.doc.full_as_xml'])
+        soup = BeautifulSoup(section['key.doc.full_as_xml'], "lxml")
         description = soup.para.get_text()
     except (KeyError, AttributeError):
         pass
@@ -329,7 +329,7 @@ def build_description(section):
 def build_attributes(section):
     content = ''
     try:
-        soup = BeautifulSoup(section['key.doc.full_as_xml'])
+        soup = BeautifulSoup(section['key.doc.full_as_xml'], "lxml")
         has_contents = False
         for parameter in soup.find_all('parameter'):
             has_contents = True
