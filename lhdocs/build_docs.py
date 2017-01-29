@@ -17,11 +17,12 @@ import re
 def build_sourcekitten(sourcekitten_json):
     pages = []
     for file_json in sourcekitten_json:
-        file_pages = file_json['key.substructure']
-        for page in file_pages:
-            markdown_page = build_page(page)
-            if markdown_page is not None:
-                pages.append(markdown_page)
+        for key in file_json:
+            file_pages = file_json[key]['key.substructure']
+            for page in file_pages:
+                markdown_page = build_page(page)
+                if markdown_page is not None:
+                    pages.append(markdown_page)
     return pages
 
 
