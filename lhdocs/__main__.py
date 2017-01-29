@@ -25,11 +25,13 @@ def main():
     parser.add_argument(
         '-project',
         dest='project',
+        nargs='+',
         help='The Xcode project to parse.'
     )
     parser.add_argument(
         '-scheme',
         dest='scheme',
+        nargs='+',
         help='The Xcode scheme to parse.'
     )
     parser.add_argument(
@@ -53,9 +55,9 @@ def main():
         'sourcekitten',
         'doc',
         '-project',
-        args.project,
+        ' '.join(args.project),
         '-scheme',
-        args.scheme
+        ' '.join(args.scheme)
     ])
     sourcekitten_JSON = json.loads(sourcekitten_result)
 
