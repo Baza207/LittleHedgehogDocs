@@ -56,6 +56,7 @@ def main():
     sourcekitten_result = subprocess.check_output([
         'sourcekitten',
         'doc',
+        '--',
         '-project',
         ' '.join(args.project),
         '-scheme',
