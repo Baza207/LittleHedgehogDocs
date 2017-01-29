@@ -44,6 +44,9 @@ def main():
     )
 
     args = parser.parse_args()
+    args.project = ' '.join(args.project)
+    args.module_name = ' '.join(args.module_name)
+
     subprocess.call('clear')
 
     print "\n---------------------------------------------------\n"
@@ -57,10 +60,10 @@ def main():
         'sourcekitten',
         'doc',
         '--module-name',
-        ' '.join(args.module_name),
+        args.module_name,
         '--',
         '-project',
-        ' '.join(args.project)
+        args.project
     ])
     sourcekitten_json = json.loads(sourcekitten_result)
 
