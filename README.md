@@ -1,5 +1,4 @@
 # LittleHedgehogDocs
-[![Build Status](https://travis-ci.org/Baza207/LittleHedgehogDocs.svg)](https://travis-ci.org/Baza207/LittleHedgehogDocs)  
 
 Little Hedgehog Docs is a Swift documentation comments to Markdown document builder. It runs off of
 [SourceKitten](https://github.com/jpsim/SourceKitten) to parse the documentation comments from Xcode
